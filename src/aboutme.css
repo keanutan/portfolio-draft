@@ -33,7 +33,6 @@ body {
 }
 
 .about-user-info {
-    /* background-color: bisque; */
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -41,7 +40,6 @@ body {
     height: 60vh;
     margin-top: 10vh;
     margin-bottom: 20vh;
-    /* border: 1px solid black; */
 }
 
 .about-user-info-resume {
@@ -109,6 +107,7 @@ body {
     /* background-color: blue; */
 }
 
+/*////////////////////////////////////////////////////////////*/
 .navbar {
     position: absolute;
     height: 200px;
@@ -173,6 +172,7 @@ a {
     text-decoration: none;
 }
 
+
 .page-title {
     /* color: black; */
     color: grey;
@@ -185,6 +185,7 @@ a {
     text-decoration: underline;
 }
 
+/*////////////////////////////////////////////////////////////*/
 .bo {}
 
 .profile-picture {
@@ -211,46 +212,7 @@ p {
     opacity: 0.3;
 } */
 
-.mm {
-    margin-top: 35px;
-    z-index: 0;
-    position: absolute;
-    /* margin-top: 7vh; */
-    pointer-events: none;
-    /* left: 100px; */
-    transform: translateX(120%);
-    transition: 0.3s;
-    width: fit-content;
-    /* height: 0px; */
-    /* opacity: 0; */
-    /* left: 100%; */
-    /* position: absolute; */
-    overflow: hidden;
-    /* opacity: 0; */
-    /* right: 175px; */
-    /* margin-right: 11rem; */
-    /* display: none; */
-    /* align-items: center; */
-    /* margin: auto; */
-    /* flex-direction: column; */
-}
 
-.mo {
-    margin-top: 35px;
-    z-index: 0;
-    position: absolute;
-    left: 0px;
-    /* right: 0%;; */
-    width: fit-content;
-    /* margin-top: 7vh; */
-    overflow: hidden;
-    transition: 0.3s;
-    /* height: 10px; */
-    /* opacity: 1; */
-    /* position: absolute; */
-    /* display: flex; */
-    /* flex-direction: column; */
-}
 
 ul {
     list-style-type: none;

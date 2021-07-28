@@ -1,35 +1,27 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import { useState, Component } from 'react';
 import { BrowserRouter as Router, Link } from 'react-router-dom';
-import Route from 'react-router-dom/Route';
-// import { Link } from 'react-router-dom/Link';
 import './aboutme.css';
-// import './pp.jpg';
 import pic from './pp.jpg'; // with import
 import { UniversityProjects } from './UniversityProjects';
 import { TechnicalSkills } from './TechnicalSkills';
 import resume from './Natchev_Keanu_Resume.pdf';
-// import react from './react.png'
+import Navbar from './Components/Navbar';
 
 
 
 class aboutme extends Component {
 
     state = {
+        componentName: 'aboutme',
         mounted: false,
         intro: false,
-        burger: false,
         mobileWindow: false,
         windowSize: window.innerWidth,
         pictureWidth: "80vw",
         outOfRange: false,
         p: window.pageYOffset
     };
-
-    handleBurgerClick = () => {
-        this.setState({ burger: !this.state.burger });
-    }
 
     revealScroll = () => {
         if (window.pageYOffset > 400) {
@@ -48,14 +40,12 @@ class aboutme extends Component {
     }
 
     wrapperTransition = () => {
-        console.log("poop");
         this.setState({ mounted: true });
     }
 
     render() {
         window.onscroll = () => {
             this.revealScroll();
-            console.log("ff");
         }
 
         return (
@@ -66,44 +56,7 @@ class aboutme extends Component {
                     <div className="arrow-left"></div>
                     <div className="arrow-right"></div>
                 </div>
-                <nav className="navbar">
-                    <div className="burger" onClick={this.handleBurgerClick}>
-
-                        <div className={(this.state.burger) ? "burger-slice-open" : "burger-slice"}></div>
-                        <div className={(this.state.burger) ? "burger-slice-open" : "burger-slice"}></div>
-                        <div className={(this.state.burger) ? "burger-slice-open" : "burger-slice"}></div>
-                    </div>
-                    <ul className={(this.state.burger) ? "mo" : "mm"}>
-                        <li>
-                            <a>
-                                <Link to="/portfolio-draft/">
-                                    <h1 className="page-title">Home</h1>
-                                </Link>
-                            </a>
-                        </li>
-                        <li>
-                            <a>
-                                <Link to="/portfolio-draft/about">
-                                    <h1 className="page-title">About Me</h1>
-                                </Link>
-                            </a>
-                        </li>
-                        <li>
-                            <a>
-                                <Link to="/portfolio-draft/contact">
-                                    <h1 className="page-title">Contact</h1>
-                                </Link>
-                            </a>
-                        </li>
-                        <li>
-                            <a>
-                                <Link to="/portfolio-draft/projects">
-                                    <h1 className="page-title">Projects</h1>
-                                </Link>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
+                <Navbar pageName={this.state.componentName}></Navbar>
                 <div className="about-user-info">
                     <div className="about-user-info-picture">
                         <img className="profile-picture" src={pic} />
@@ -124,7 +77,7 @@ class aboutme extends Component {
                             </p>
                             <div className="resume-contact-button-section">
                                 <a className="resume-link" href={resume} target='_blank' rel='noopener noreferrer'>View Resume</a>
-                                <Link className="contact-me-link" to="/contact">
+                                <Link className="contact-me-link" to="/portfolio-draft/contact">
                                     Contact Me
                                 </Link>
                             </div>

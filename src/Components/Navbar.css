@@ -1,0 +1,93 @@
+.navbar {
+    position: absolute;
+    height: 200px;
+    width: 70px;
+    right: 0px;
+    overflow: hidden;
+}
+
+.burger {
+    transition: 0.3s;
+    float: right;
+    margin-right: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.burger-slice {
+    transition: 0.3s;
+    width: 20px;
+    height: 2px;
+    background: grey;
+    margin-top: 2px;
+}
+
+.burger-slice-open {
+    width: 20px;
+    height: 2px;
+    background: grey;
+    margin-top: 2px;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.burger-slice-open:first-child {
+    opacity: 1;
+    transition: 0.3s;
+    transform: rotate(45deg) translateY(5.5px);
+    display: block;
+}
+
+.burger-slice-open:last-child {
+    opacity: 1;
+    transition: 0.3s;
+    transform: rotate(-45deg) translateY(-5.5px);
+    display: block;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+}
+
+.page-title {
+    color: grey;
+    font-size: small;
+}
+
+.page-title:hover {
+    text-decoration: underline;
+}
+
+.page-title-hidden {
+    display: none;
+}
+
+
+
+.mm {
+    width: 65px;
+    margin-top: 35px;
+    z-index: 0;
+    position: absolute;
+    pointer-events: none;
+    transform: translateX(110%);
+    transition: 0.3s;
+    /* width: fit-content; */
+    overflow: hidden;
+}
+
+.mo {
+    width: 65px;
+    margin-top: 35px;
+    z-index: 0;
+    position: absolute;
+    left: 0px;
+    overflow: hidden;
+    transition: 0.3s;
+}
