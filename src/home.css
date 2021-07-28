@@ -1,0 +1,95 @@
+.wrapper-home {
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    opacity: 1;
+    transition: 0.3s;
+}
+.wrapper-home-white {
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.user-info-home {
+    width: 61.8%;
+    height: 100vh;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid black; */
+    /* border-right: 1px solid black; */
+    justify-content: center;
+    overflow: hidden;
+}
+
+.user-info-element {
+    /* text-align: center; */
+    /* position: absolute; */
+}
+
+.menu {
+    width: 38.2%;
+    height: 100vh;
+    float: right;
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+}
+
+.menu-element {
+    width: 100%;
+    height: 33.33%;
+    /* border-bottom: 1px solid black; */
+    /* display: block; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.menu-element:last-child {
+    border-bottom: visible;
+}
+
+.profile-picture-home {
+    height: 40%;
+
+    /* height: 200px; */
+    width: 60%;
+}
+
+.page-name {
+    position: absolute;
+    width: fit-content;
+    align-self: center;
+}
+
+.page-link {
+    display: contents;
+}
+
+.profile-picture-home {
+    display: none;
+}
+.profile-video-home {
+    /* position: absolute; */
+    transform: translate(10px, -80px) scale(1.2);;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.user-info-home-section {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+}
+
+.profile-video-home-el {
+    width: 100%;
+    /* overflow: hidden; */
+    z-index: -1;
+}
