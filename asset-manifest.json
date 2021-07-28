@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/portfolio-draft/static/css/main.aa13b83d.chunk.css",
-    "main.js": "/portfolio-draft/static/js/main.4144a979.chunk.js",
-    "main.js.map": "/portfolio-draft/static/js/main.4144a979.chunk.js.map",
-    "runtime-main.js": "/portfolio-draft/static/js/runtime-main.6efc0c4c.js",
-    "runtime-main.js.map": "/portfolio-draft/static/js/runtime-main.6efc0c4c.js.map",
-    "static/js/2.396ada4a.chunk.js": "/portfolio-draft/static/js/2.396ada4a.chunk.js",
-    "static/js/2.396ada4a.chunk.js.map": "/portfolio-draft/static/js/2.396ada4a.chunk.js.map",
-    "static/js/3.81d1986b.chunk.js": "/portfolio-draft/static/js/3.81d1986b.chunk.js",
-    "static/js/3.81d1986b.chunk.js.map": "/portfolio-draft/static/js/3.81d1986b.chunk.js.map",
+    "main.css": "/portfolio-draft/static/css/main.80991d91.chunk.css",
+    "main.js": "/portfolio-draft/static/js/main.a432053a.chunk.js",
+    "main.js.map": "/portfolio-draft/static/js/main.a432053a.chunk.js.map",
+    "runtime-main.js": "/portfolio-draft/static/js/runtime-main.0a384ce0.js",
+    "runtime-main.js.map": "/portfolio-draft/static/js/runtime-main.0a384ce0.js.map",
+    "static/js/2.2f2c3c61.chunk.js": "/portfolio-draft/static/js/2.2f2c3c61.chunk.js",
+    "static/js/2.2f2c3c61.chunk.js.map": "/portfolio-draft/static/js/2.2f2c3c61.chunk.js.map",
+    "static/js/3.ad7dab95.chunk.js": "/portfolio-draft/static/js/3.ad7dab95.chunk.js",
+    "static/js/3.ad7dab95.chunk.js.map": "/portfolio-draft/static/js/3.ad7dab95.chunk.js.map",
     "index.html": "/portfolio-draft/index.html",
-    "static/css/main.aa13b83d.chunk.css.map": "/portfolio-draft/static/css/main.aa13b83d.chunk.css.map",
-    "static/js/2.396ada4a.chunk.js.LICENSE.txt": "/portfolio-draft/static/js/2.396ada4a.chunk.js.LICENSE.txt",
+    "static/css/main.80991d91.chunk.css.map": "/portfolio-draft/static/css/main.80991d91.chunk.css.map",
+    "static/js/2.2f2c3c61.chunk.js.LICENSE.txt": "/portfolio-draft/static/js/2.2f2c3c61.chunk.js.LICENSE.txt",
     "static/media/DSC02062.d4aaf7c0.JPG": "/portfolio-draft/static/media/DSC02062.d4aaf7c0.JPG",
     "static/media/Natchev_Keanu_Resume.53fe543b.pdf": "/portfolio-draft/static/media/Natchev_Keanu_Resume.53fe543b.pdf",
     "static/media/anime.bcb1b2a9.svg": "/portfolio-draft/static/media/anime.bcb1b2a9.svg",
@@ -29,9 +29,9 @@
     "static/media/webots.c9b1187f.png": "/portfolio-draft/static/media/webots.c9b1187f.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.6efc0c4c.js",
-    "static/js/2.396ada4a.chunk.js",
-    "static/css/main.aa13b83d.chunk.css",
-    "static/js/main.4144a979.chunk.js"
+    "static/js/runtime-main.0a384ce0.js",
+    "static/js/2.2f2c3c61.chunk.js",
+    "static/css/main.80991d91.chunk.css",
+    "static/js/main.a432053a.chunk.js"
   ]
 }
