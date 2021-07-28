@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/portfolio-draft/static/css/main.aa13b83d.chunk.css",
+    "main.js": "/portfolio-draft/static/js/main.329936bb.chunk.js",
+    "main.js.map": "/portfolio-draft/static/js/main.329936bb.chunk.js.map",
+    "runtime-main.js": "/portfolio-draft/static/js/runtime-main.6efc0c4c.js",
+    "runtime-main.js.map": "/portfolio-draft/static/js/runtime-main.6efc0c4c.js.map",
+    "static/js/2.396ada4a.chunk.js": "/portfolio-draft/static/js/2.396ada4a.chunk.js",
+    "static/js/2.396ada4a.chunk.js.map": "/portfolio-draft/static/js/2.396ada4a.chunk.js.map",
+    "static/js/3.81d1986b.chunk.js": "/portfolio-draft/static/js/3.81d1986b.chunk.js",
+    "static/js/3.81d1986b.chunk.js.map": "/portfolio-draft/static/js/3.81d1986b.chunk.js.map",
+    "index.html": "/portfolio-draft/index.html",
+    "static/css/main.aa13b83d.chunk.css.map": "/portfolio-draft/static/css/main.aa13b83d.chunk.css.map",
+    "static/js/2.396ada4a.chunk.js.LICENSE.txt": "/portfolio-draft/static/js/2.396ada4a.chunk.js.LICENSE.txt",
+    "static/media/DSC02062.d4aaf7c0.JPG": "/portfolio-draft/static/media/DSC02062.d4aaf7c0.JPG",
+    "static/media/Natchev_Keanu_Resume.53fe543b.pdf": "/portfolio-draft/static/media/Natchev_Keanu_Resume.53fe543b.pdf",
+    "static/media/anime.bcb1b2a9.svg": "/portfolio-draft/static/media/anime.bcb1b2a9.svg",
+    "static/media/gherkin.38ba87bd.svg": "/portfolio-draft/static/media/gherkin.38ba87bd.svg",
+    "static/media/gradle.fb15e4fb.svg": "/portfolio-draft/static/media/gradle.fb15e4fb.svg",
+    "static/media/heroku.1c4eb738.svg": "/portfolio-draft/static/media/heroku.1c4eb738.svg",
+    "static/media/leocad.41db40e6.svg": "/portfolio-draft/static/media/leocad.41db40e6.svg",
+    "static/media/logo.6ce24c58.svg": "/portfolio-draft/static/media/logo.6ce24c58.svg",
+    "static/media/pp.38c8f523.jpg": "/portfolio-draft/static/media/pp.38c8f523.jpg",
+    "static/media/react.fffdf700.svg": "/portfolio-draft/static/media/react.fffdf700.svg",
+    "static/media/springboot.5b10349a.svg": "/portfolio-draft/static/media/springboot.5b10349a.svg",
+    "static/media/travisci.3ca18a2f.svg": "/portfolio-draft/static/media/travisci.3ca18a2f.svg",
+    "static/media/umple.ddc10480.svg": "/portfolio-draft/static/media/umple.ddc10480.svg",
+    "static/media/vue.77e8aef6.svg": "/portfolio-draft/static/media/vue.77e8aef6.svg",
+    "static/media/webots.c9b1187f.png": "/portfolio-draft/static/media/webots.c9b1187f.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6efc0c4c.js",
+    "static/js/2.396ada4a.chunk.js",
+    "static/css/main.aa13b83d.chunk.css",
+    "static/js/main.329936bb.chunk.js"
+  ]
+}
