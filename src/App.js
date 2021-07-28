@@ -11,9 +11,9 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route path="/" exact component={Home}></Route>
-        <Route path="/about" exact component={About}></Route>
-        <Route path="/contact" exact component={Contact}></Route>
+        <Route path="/portfolio-draft/" exact component={Home}></Route>
+        <Route path="/portfolio-draft/about" exact component={About}></Route>
+        <Route path="/portfolio-draft/contact" exact component={Contact}></Route>
         {/* <Route path="/contact" exact component={Contact}></Route>
         <Route path="/projects" exact component={Projects}></Route> */}
       </Switch>

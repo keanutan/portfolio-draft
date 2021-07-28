@@ -76,28 +76,28 @@ class aboutme extends Component {
                     <ul className={(this.state.burger) ? "mo" : "mm"}>
                         <li>
                             <a>
-                                <Link to="/">
+                                <Link to="/portfolio-draft/">
                                     <h1 className="page-title">Home</h1>
                                 </Link>
                             </a>
                         </li>
                         <li>
                             <a>
-                                <Link to="/about">
+                                <Link to="/portfolio-draft/about">
                                     <h1 className="page-title">About Me</h1>
                                 </Link>
                             </a>
                         </li>
                         <li>
                             <a>
-                                <Link to="/contact">
+                                <Link to="/portfolio-draft/contact">
                                     <h1 className="page-title">Contact</h1>
                                 </Link>
                             </a>
                         </li>
                         <li>
                             <a>
-                                <Link to="/projects">
+                                <Link to="/portfolio-draft/projects">
                                     <h1 className="page-title">Projects</h1>
                                 </Link>
                             </a>

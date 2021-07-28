@@ -50,19 +50,19 @@ class home extends Component {
                 <div className="menu">
                     <div className="menu-element">
                         {/* <video className="profile-video-home-el" src={video} autoPlay loop /> */}
-                        <Link className="page-link" to="/about" >
+                        <Link className="page-link" to="/portfolio-draft/about" >
                             <h1 className="page-name">About Me</h1>
                         </Link>
                     </div>
                     <div className="menu-element">
                         {/* <video className="profile-video-home-el" src={video} autoPlay loop /> */}
-                        <Link className="page-link" to="/contact">
+                        <Link className="page-link" to="/portfolio-draft/contact">
                             <h1 className="page-name">Contact</h1>
                         </Link>
                     </div>
                     <div className="menu-element">
                         {/* <video className="profile-video-home-el" src={video} autoPlay loop /> */}
-                        <Link className="page-link" to="/projects">
+                        <Link className="page-link" to="/portfolio-draft/projects">
                             <h1 className="page-name">Projects</h1>
                         </Link>
                     </div>
