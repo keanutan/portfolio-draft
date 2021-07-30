@@ -44,6 +44,8 @@ class aboutme extends Component {
     }
 
     render() {
+        document.title = "Keanu Natchev | About Me";
+        
         window.onscroll = () => {
             this.revealScroll();
         }
@@ -77,7 +79,7 @@ class aboutme extends Component {
                             </p>
                             <div className="resume-contact-button-section">
                                 <a className="resume-link" href={resume} target='_blank' rel='noopener noreferrer'>View Resume</a>
-                                <Link className="contact-me-link" to="/portfolio-draft/contact">
+                                <Link className="contact-me-link" to="/contact">
                                     Contact Me
                                 </Link>
                             </div>

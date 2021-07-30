@@ -39,6 +39,7 @@ class contactme extends Component {
 
 
     render() {
+        document.title = "Keanu Natchev | Contact Me";
         return (
 
             <div className={(this.state.mountedContact) ? "wrapper-contact" : "wrapper-black-contact"} onLoad={this.wrapperTransition}>

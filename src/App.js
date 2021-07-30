@@ -11,35 +11,10 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route path="/portfolio-draft/" exact component={Home}></Route>
-        <Route path="/portfolio-draft/about" exact component={About}></Route>
-        <Route path="/portfolio-draft/contact" exact component={Contact}></Route>
-        {/* <Route path="/contact" exact component={Contact}></Route>
-        <Route path="/projects" exact component={Projects}></Route> */}
+        <Route path="/" exact component={Home}></Route>
+        <Route path="/about" exact component={About}></Route>
+        <Route path="/contact" exact component={Contact}></Route>
       </Switch>
-      {/* <Route path="/home" exact strict component={home}></Route>
-      <div className="App">
-        <Route path="/" exact strict render={
-          () => {
-            return (
-              <div>
-                <h1>Homepage</h1>
-                <Link to="/poop" >POOP</Link>
-              </div>
-            );
-          }
-        } />
-        <Route path="/poop" exact strict render={
-          () => {
-            return (
-              <div>
-                <h1>Poop</h1>
-                <Link to="/home" >Home</Link>
-              </div>
-            );
-          }
-        } />
-      </div> */}
     </Router>
   );
 }

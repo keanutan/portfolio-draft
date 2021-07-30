@@ -23,16 +23,16 @@ export default class Navbar extends Component {
                     <div className={(this.state.burger) ? "burger-slice-open" : "burger-slice"}></div>
                 </div>
                 <ul className={(this.state.burger) ? "mo" : "mm"}>
-                    <Link to="/portfolio-draft/">
+                    <Link to="/">
                         <h1 className={(this.state.currentPage == "home") ? "page-title-hidden" : "page-title"}>Home</h1>
                     </Link>
-                    <Link to="/portfolio-draft/about">
+                    <Link to="/about">
                         <h1 className={(this.state.currentPage == "aboutme") ? "page-title-hidden" : "page-title"}>About Me</h1>
                     </Link>
-                    <Link to="/portfolio-draft/contact">
+                    <Link to="/contact">
                         <h1 className={(this.state.currentPage == "contactme") ? "page-title-hidden" : "page-title"}>Contact</h1>
                     </Link>
-                    <Link to="/portfolio-draft/projects">
+                    <Link to="/projects">
                         <h1 className={(this.state.currentPage == "projects") ? "page-title-hidden" : "page-title"}>Projects</h1>
                     </Link>
                 </ul>
