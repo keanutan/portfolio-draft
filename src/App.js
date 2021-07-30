@@ -9,13 +9,11 @@ import './App.css';
 
 function App() {
   return (
-    <Router>
       <Switch>
         <Route path="/" exact component={Home}></Route>
         <Route path="/about" exact component={About}></Route>
         <Route path="/contact" exact component={Contact}></Route>
       </Switch>
-    </Router>
   );
 }
 
