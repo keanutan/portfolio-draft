@@ -1,0 +1,35 @@
+.scroll-to-top {
+    cursor: pointer;
+    position: fixed;
+    width: 22px;
+    height: 20px;
+    opacity: 1;
+    right: 18px;
+    top: 20px;
+    transition: 0.3s;
+}
+
+.arrow-left {
+    height: 2px;
+    width: 15px;
+    background-color: grey;
+    transform: rotate(-45deg) translateX(-5px) translateY(3.4px);
+}
+
+.arrow-right {
+    height: 2px;
+    width: 15px;
+    background-color: grey;
+    transform: rotate(45deg) translateX(8.5px) translateY(-2.9px);
+}
+
+.scroll-to-top-hidden {
+    pointer-events: none;
+    position: fixed;
+    width: 22px;
+    height: 20px;
+    opacity: 0;
+    right: 18px;
+    top: 20px;
+    transition: 0.3s;
+}

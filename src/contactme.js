@@ -15,23 +15,8 @@ class contactme extends Component {
         mobileWindow: false,
         windowSize: window.innerWidth,
         pictureWidth: "80vw",
-        outOfRange: false,
         p: window.pageYOffset
     };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     wrapperTransition = () => {
         this.setState({ mountedContact: true });
@@ -44,10 +29,6 @@ class contactme extends Component {
 
             <div className={(this.state.mountedContact) ? "wrapper-contact" : "wrapper-black-contact"} onLoad={this.wrapperTransition}>
                 <h3 className="title">Contact Me</h3>
-                <div className={(this.state.outOfRange) ? "scroll-to-top" : "scroll-to-top-hidden"} onClick={this.goToTop}>
-                    <div className="arrow-left"></div>
-                    <div className="arrow-right"></div>
-                </div>
                 <Navbar pageName={this.state.componentName}></Navbar>
                 <div className="contact-form-wrapper">
                     <div className="about-user-info-picture">

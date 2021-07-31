@@ -1,0 +1,155 @@
+.wrapper-projects {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 1;
+    transition: 0.3s;
+    background-color: rgb(33, 33, 33);
+    height: 100vh;
+}
+
+.wrapper-black-projects {
+    opacity: 0;
+    transition: 0.3s;
+}
+
+
+.projects-window-wrapper {
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80vw;
+    height: 60vh;
+    margin-top: 10vh;
+    margin-bottom: 20vh;
+    border: 1px solid grey;
+}
+
+
+
+
+.projects-window-top-bar {
+    width: 100%;
+    height: 20px;
+    border-bottom: 1px solid grey;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.projects-window-top-bar-icon {
+    /* margin: 1px; */
+    height: 70%;
+    margin-right: 3px;
+    /* float: right; */
+}
+
+.projects-window-navigation-bar {
+    width: 100%;
+    height: 20px;
+    border-bottom: 1px solid grey;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.projects-window-navigation-bar-icon {
+    height: 70%;
+    margin-left: 15px;
+}
+
+.projects-window-file-system-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.projects-window-file-system-sidebar {
+    min-width: 100px;
+    width: 20%;
+    height: 100%;
+    border-right: 1px solid grey;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.projects-window-file-system-sidebar-icon {
+    margin-top: 10px;
+    /* margin-top: 10px; */
+    height: 30px;
+}
+
+
+.projects-window-file-system-files {
+    min-width: 100px;
+    width: 80%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contact-form-user-info {
+    width: 80vw;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* border: 1px solid white; */
+}
+
+.contact-form-user-input-section {
+    /* border: 1px solid white; */
+    text-align: center;
+}
+.contact-form-user-input-section-title {
+    color: grey;
+}
+
+.contact-form-user-first-name,
+.contact-form-user-last-name,
+.contact-form-user-email,
+.contact-form-user-message {
+    background-color: rgb(33, 33, 33);
+    border: 1px solid grey;
+    width: min(18vw, 25vw);
+    color: grey;
+}
+
+.contact-form-user-email {
+    width: min(25vw, 25vw);
+    
+}
+
+.contact-form-user-message {
+    /* background-color: rgb(33, 33, 33); */
+    /* border: 1px solid grey; */
+    height: 40vh;
+    width: 80vw;
+    /* text-align: initial; */
+    /* display: flex; */
+    /* align-items: ; */
+}
+
+.profile-picture-projects {
+    display: none;
+}

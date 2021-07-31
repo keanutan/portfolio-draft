@@ -7,6 +7,7 @@ import { UniversityProjects } from './UniversityProjects';
 import { TechnicalSkills } from './TechnicalSkills';
 import resume from './Natchev_Keanu_Resume.pdf';
 import Navbar from './Components/Navbar';
+import ScrollToTop from './Components/ScrollToTop';
 
 
 
@@ -19,25 +20,25 @@ class aboutme extends Component {
         mobileWindow: false,
         windowSize: window.innerWidth,
         pictureWidth: "80vw",
-        outOfRange: false,
+        // outOfRange: false,
         p: window.pageYOffset
     };
 
-    revealScroll = () => {
-        if (window.pageYOffset > 400) {
-            this.setState({ outOfRange: true });
-        }
-        else {
-            this.setState({ outOfRange: false });
-        }
-    }
+    // revealScroll = () => {
+    //     if (window.pageYOffset > 400) {
+    //         this.setState({ outOfRange: true });
+    //     }
+    //     else {
+    //         this.setState({ outOfRange: false });
+    //     }
+    // }
 
-    goToTop = () => {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
-    }
+    // goToTop = () => {
+    //     window.scrollTo({
+    //         top: 0,
+    //         behavior: 'smooth'
+    //     });
+    // }
 
     wrapperTransition = () => {
         this.setState({ mounted: true });
@@ -46,18 +47,19 @@ class aboutme extends Component {
     render() {
         document.title = "Keanu Natchev | About Me";
         
-        window.onscroll = () => {
-            this.revealScroll();
-        }
+        // window.onscroll = () => {
+        //     this.revealScroll();
+        // }
 
         return (
 
             <div className={(this.state.mounted) ? "wrapper" : "wrapper-white"} onLoad={this.wrapperTransition}>
                 <h3 className="title">About Me</h3>
-                <div className={(this.state.outOfRange) ? "scroll-to-top" : "scroll-to-top-hidden"} onClick={this.goToTop}>
+                <ScrollToTop></ScrollToTop>
+                {/* <div className={(this.state.outOfRange) ? "scroll-to-top" : "scroll-to-top-hidden"} onClick={this.goToTop}>
                     <div className="arrow-left"></div>
                     <div className="arrow-right"></div>
-                </div>
+                </div> */}
                 <Navbar pageName={this.state.componentName}></Navbar>
                 <div className="about-user-info">
                     <div className="about-user-info-picture">
