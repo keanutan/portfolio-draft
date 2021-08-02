@@ -86,11 +86,32 @@
     min-width: 100px;
     width: 80%;
     height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    /* flex-direction: row; */
+    /* flex-wrap: wrap; */
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px;
 }
 
 
 
+.projects-window-file-system-files-item-wrapper {
+    height: fit-content;
+    width: 90px;
+    padding: 10px;
+}
 
+.projects-window-file-system-files-item-image {
+    width: 90px;
+    height: 60px;
+}
+
+.projects-window-file-system-files-item-title {
+    color: grey;
+    text-align: center;
+}
 
 
 
