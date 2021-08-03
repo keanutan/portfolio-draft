@@ -24,6 +24,7 @@ class projects extends Component {
         windowSize: window.innerWidth,
         pictureWidth: "80vw",
         p: window.pageYOffset,
+        visitedFolders: [],
         folderName: 'Keanutan',
         folderLevel: 1
     };
@@ -44,14 +45,40 @@ class projects extends Component {
         if (this.SubfoldersNameMatch(item, folder)) {
             return folder.Name;
         } else {
-            if(folder.Subfolders.lenght != 0) {
+            if (folder.Subfolders.lenght != 0) {
                 folder.Subfolders.map((element) => {
                     this.FindParentFolder(item, element);
                 })
             }
         }
-
+        
     }
+    
+    visitedFoldersUpdate(currentFolder) {
+        if(!this.state.visitedFolders.includes(currentFolder)) {
+            // let tmp = this.state.visitedFolders;
+            this.state.visitedFolders.push(currentFolder);
+            // tmp.push(currentFolder);
+            // this.setState({ visitedFolders: tmp });
+            
+            // this.state.visitedFolders.push(currentFolder);
+            // console.log(this.state.visitedFolders);
+        }
+    }
+
+    backButton() {
+        // let last = this.state.visitedFolders[this.state.visitedFolders.length - 1];
+        // this.FileSystemDisplay('Keanutan');
+        if (this.state.visitedFolders.length > 0) {
+            this.setState({folderName: this.state.visitedFolders.pop()});
+            // console.log(this.state.visitedFolders);
+        }
+    }
+
+    linkOpen(link) {
+        window.open(link);
+    }
+    
 
 
     FileSystemDisplay(props) {
@@ -62,7 +89,7 @@ class projects extends Component {
                         {
                             FileSystem.Subfolders.map((element) => {
                                 return (
-                                    <div className="projects-window-file-system-files-item-wrapper" onClick={() => this.setState({ folderName: element.Name })}>
+                                    <div className="projects-window-file-system-files-item-wrapper" onClick={() => { this.setState({ folderName: element.Name }); this.visitedFoldersUpdate(element.Parent) }}>
                                         <div>
                                             {element.Image}
                                         </div>
@@ -82,7 +109,7 @@ class projects extends Component {
                         {
                             FileSystem.Subfolders[0].Subfolders.map((element) => {
                                 return (
-                                    <div className="projects-window-file-system-files-item-wrapper" onClick={() => this.setState({ folderName: element.Name })}>
+                                    <div className="projects-window-file-system-files-item-wrapper" onClick={() => { this.setState({ folderName: element.Name }); this.visitedFoldersUpdate(element.Parent) }}>
                                         <div>
                                             {element.Image}
                                         </div>
@@ -102,7 +129,7 @@ class projects extends Component {
                         {
                             FileSystem.Subfolders[0].Subfolders[0].Subfolders.map((element) => {
                                 return (
-                                    <div className="projects-window-file-system-files-item-wrapper" onClick={() => this.setState({ folderName: element.Name })}>
+                                    <div className="projects-window-file-system-files-item-wrapper" onClick={() => { this.linkOpen(element.Link) }}>
                                         <div>
                                             {element.Image}
                                         </div>
@@ -122,7 +149,7 @@ class projects extends Component {
                         {
                             FileSystem.Subfolders[0].Subfolders[1].Subfolders.map((element) => {
                                 return (
-                                    <div className="projects-window-file-system-files-item-wrapper" onClick={() => this.setState({ folderName: element.Name })}>
+                                    <div className="projects-window-file-system-files-item-wrapper" onClick={() => { this.linkOpen(element.Link) }}>
                                         <div>
                                             {element.Image}
                                         </div>
@@ -145,9 +172,10 @@ class projects extends Component {
         }
     }
 
+
     render() {
         document.title = "Keanu Natchev | Projects";
-        console.log(this.FindParentFolder('Projects', FileSystem.Subfolders));
+        // console.log(this.FindParentFolder('Projects', FileSystem.Subfolders));
 
         return (
 
@@ -161,7 +189,7 @@ class projects extends Component {
                         <img className="projects-window-top-bar-icon" src={tab} />
                     </div>
                     <div className="projects-window-navigation-bar">
-                        <img className="projects-window-navigation-bar-icon" src={back} />
+                        <img className="projects-window-navigation-bar-icon" src={back} onClick={() => this.backButton()} />
                         <img className="projects-window-navigation-bar-icon" src={forward} />
                     </div>
                     <div className="projects-window-file-system-wrapper">
