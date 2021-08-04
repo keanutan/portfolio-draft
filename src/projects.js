@@ -51,16 +51,16 @@ class projects extends Component {
                 })
             }
         }
-        
+
     }
-    
+
     visitedFoldersUpdate(currentFolder) {
-        if(!this.state.visitedFolders.includes(currentFolder)) {
+        if (!this.state.visitedFolders.includes(currentFolder)) {
             // let tmp = this.state.visitedFolders;
             this.state.visitedFolders.push(currentFolder);
             // tmp.push(currentFolder);
             // this.setState({ visitedFolders: tmp });
-            
+
             // this.state.visitedFolders.push(currentFolder);
             // console.log(this.state.visitedFolders);
         }
@@ -70,7 +70,7 @@ class projects extends Component {
         // let last = this.state.visitedFolders[this.state.visitedFolders.length - 1];
         // this.FileSystemDisplay('Keanutan');
         if (this.state.visitedFolders.length > 0) {
-            this.setState({folderName: this.state.visitedFolders.pop()});
+            this.setState({ folderName: this.state.visitedFolders.pop() });
             // console.log(this.state.visitedFolders);
         }
     }
@@ -78,10 +78,107 @@ class projects extends Component {
     linkOpen(link) {
         window.open(link);
     }
-    
+
+    FileSystemSidebarDisplay(props) {
+        console.log(props);
+        switch (props) {
+            case 'Keanutan':
+                return (
+                    <div className="projects-window-file-system-sidebar">
+                        <div className="root">
+                            <img className="projects-window-file-system-sidebar-icon" src={harddriveicon} />
+                            <h5 className="projects-window-file-system-sidebar-folder-name">Keanutan</h5>
+                        </div>
+                        <div className="folder" onClick={() => { this.setState({ folderName: 'Projects' }); this.visitedFoldersUpdate('Keanutan') }}>
+                            <img className="projects-window-file-system-sidebar-icon-folder" src={forward} />
+                            <h5 className="projects-window-file-system-sidebar-folder-name">Projects</h5>
+                        </div>
+                    </div>
+                )
+                break;
+            case 'Projects':
+                return (
+                    <div className="projects-window-file-system-sidebar">
+                        <div className="root">
+                            <img className="projects-window-file-system-sidebar-icon" src={harddriveicon} />
+                            <h5 className="projects-window-file-system-sidebar-folder-name">Keanutan</h5>
+                        </div>
+                        <div className="folder" onClick={() => { this.setState({ folderName: 'Projects' }); this.visitedFoldersUpdate('Keanutan') }}>
+                            <img className="projects-window-file-system-sidebar-icon-folder" src={forward} />
+                            <h5 className="projects-window-file-system-sidebar-folder-name">Projects</h5>
+                        </div>
+                        <div className="folder-level-1" onClick={() => { this.setState({ folderName: 'Java' }); this.visitedFoldersUpdate('Projects') }}>
+                            <img className="projects-window-file-system-sidebar-icon-folder" src={forward} />
+                            <h5 className="projects-window-file-system-sidebar-folder-name">Java</h5>
+                        </div>
+                        <div className="folder-level-1" onClick={() => { this.setState({ folderName: 'Python' }); this.visitedFoldersUpdate('Projects') }}>
+                            <img className="projects-window-file-system-sidebar-icon-folder" src={forward} />
+                            <h5 className="projects-window-file-system-sidebar-folder-name">Python</h5>
+                        </div>
+                    </div>
+                )
+                break;
+            case 'Java':
+                return (
+                    <div className="projects-window-file-system-sidebar">
+                        <div className="root">
+                            <img className="projects-window-file-system-sidebar-icon" src={harddriveicon} />
+                            <h5 className="projects-window-file-system-sidebar-folder-name">Keanutan</h5>
+                        </div>
+                        <div className="folder" onClick={() => { this.setState({ folderName: 'Projects' }); this.visitedFoldersUpdate('Keanutan') }}>
+                            <img className="projects-window-file-system-sidebar-icon-folder" src={forward} />
+                            <h5 className="projects-window-file-system-sidebar-folder-name">Projects</h5>
+                        </div>
+                        <div className="folder-level-1" onClick={() => { this.setState({ folderName: 'Java' }); this.visitedFoldersUpdate('Projects') }}>
+                            <img className="projects-window-file-system-sidebar-icon-folder" src={forward} />
+                            <h5 className="projects-window-file-system-sidebar-folder-name">Java</h5>
+                        </div>
+                        <div className="folder-level-2">
+                            <img className="projects-window-file-system-sidebar-icon-folder" src={forward} />
+                            <h5 className="projects-window-file-system-sidebar-folder-name">Binary Search Tree Visualizer</h5>
+                        </div>
+                        <div className="folder-level-1" onClick={() => { this.setState({ folderName: 'Python' }); this.visitedFoldersUpdate('Projects') }}>
+                            <img className="projects-window-file-system-sidebar-icon-folder" src={forward} />
+                            <h5 className="projects-window-file-system-sidebar-folder-name">Python</h5>
+                        </div>
+                    </div>
+                )
+                break;
+            case 'Python':
+                return (
+                    <div className="projects-window-file-system-sidebar">
+                        <div className="root">
+                            <img className="projects-window-file-system-sidebar-icon" src={harddriveicon} />
+                            <h5 className="projects-window-file-system-sidebar-folder-name">Keanutan</h5>
+                        </div>
+                        <div className="folder" onClick={() => { this.setState({ folderName: 'Projects' }); this.visitedFoldersUpdate('Keanutan') }}>
+                            <img className="projects-window-file-system-sidebar-icon-folder" src={forward} />
+                            <h5 className="projects-window-file-system-sidebar-folder-name">Projects</h5>
+                        </div>
+                        <div className="folder-level-1" onClick={() => { this.setState({ folderName: 'Java' }); this.visitedFoldersUpdate('Projects') }}>
+                            <img className="projects-window-file-system-sidebar-icon-folder" src={forward} />
+                            <h5 className="projects-window-file-system-sidebar-folder-name">Java</h5>
+                        </div>
+                        <div className="folder-level-1" onClick={() => { this.setState({ folderName: 'Python' }); this.visitedFoldersUpdate('Projects') }}>
+                            <img className="projects-window-file-system-sidebar-icon-folder" src={forward} />
+                            <h5 className="projects-window-file-system-sidebar-folder-name">Python</h5>
+                        </div>
+                        <div className="folder-level-2">
+                            <img className="projects-window-file-system-sidebar-icon-folder" src={forward} />
+                            <h5 className="projects-window-file-system-sidebar-folder-name">Fast Fourier Transform Image Processor</h5>
+                        </div>
+                    </div>
+                )
+                break;
+
+            default:
+                break;
+        }
+    }
 
 
     FileSystemDisplay(props) {
+        console.log(props);
         switch (props) {
             case 'Keanutan':
                 return (
@@ -193,17 +290,9 @@ class projects extends Component {
                         <img className="projects-window-navigation-bar-icon" src={forward} />
                     </div>
                     <div className="projects-window-file-system-wrapper">
-                        <div className="projects-window-file-system-sidebar">
-                            <img className="projects-window-file-system-sidebar-icon" src={harddriveicon} />
-
-                        </div>
-                        {/* <div className="projects-window-file-system-files"> */}
+                        {this.FileSystemSidebarDisplay(this.state.folderName)}
                         {this.FileSystemDisplay(this.state.folderName)}
-                        {/* <this.FileSystemDisplay /> */}
-                        {/* <this.FileSystemDisplay></this.FileSystemDisplay> */}
-                        {/* </div> */}
                     </div>
-                    {/* <img className="profile-picture-projects" src={pic} height="0" /> */}
                 </div>
             </div>
         );
