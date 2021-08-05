@@ -8,6 +8,7 @@ import { TechnicalSkills } from './TechnicalSkills';
 import resume from './Natchev_Keanu_Resume.pdf';
 import Navbar from './Components/Navbar';
 import ScrollToTop from './Components/ScrollToTop';
+import Footer from './Components/Footer';
 
 
 
@@ -200,6 +201,7 @@ class aboutme extends Component {
                         </div>
                     </div>
                 </div>
+                <Footer />
             </div>
         );
     }

@@ -3,6 +3,7 @@ import { useState, Component } from 'react';
 import './contactme.css';
 import pic from './pp.jpg'; // with import
 import Navbar from './Components/Navbar';
+import Footer from './Components/Footer';
 
 
 class contactme extends Component {
@@ -50,6 +51,7 @@ class contactme extends Component {
                     </div>
                     <textarea className="contact-form-user-message"></textarea>
                 </div>
+                <Footer />
             </div>
         );
     }

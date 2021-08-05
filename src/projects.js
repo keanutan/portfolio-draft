@@ -11,6 +11,7 @@ import back from './Components/FileSystemComponents/back.svg';
 import forward from './Components/FileSystemComponents/forward.svg';
 import harddriveicon from './Components/FileSystemComponents/harddriveicon.svg';
 import folder from './Components/FileSystemComponents/folder.svg';
+import Footer from './Components/Footer';
 
 
 class projects extends Component {
@@ -281,9 +282,9 @@ class projects extends Component {
                 <Navbar pageName={this.state.componentName}></Navbar>
                 <div className="projects-window-wrapper">
                     <div className="projects-window-top-bar">
-                        <img className="projects-window-top-bar-icon" src={close} />
                         <img className="projects-window-top-bar-icon" src={minimize} />
                         <img className="projects-window-top-bar-icon" src={tab} />
+                        <img className="projects-window-top-bar-icon" src={close} />
                     </div>
                     <div className="projects-window-navigation-bar">
                         <img className="projects-window-navigation-bar-icon" src={back} onClick={() => this.backButton()} />
@@ -294,6 +295,7 @@ class projects extends Component {
                         {this.FileSystemDisplay(this.state.folderName)}
                     </div>
                 </div>
+                <Footer />
             </div>
         );
     }
