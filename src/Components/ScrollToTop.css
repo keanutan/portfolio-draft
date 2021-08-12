@@ -5,7 +5,18 @@
     height: 20px;
     opacity: 1;
     right: 18px;
-    top: 20px;
+    bottom: 20px;
+    transition: 0.3s;
+}
+
+.scroll-to-top-hidden {
+    pointer-events: none;
+    position: fixed;
+    width: 22px;
+    height: 20px;
+    opacity: 0;
+    right: 18px;
+    bottom: 20px;
     transition: 0.3s;
 }
 
@@ -21,15 +32,4 @@
     width: 15px;
     background-color: grey;
     transform: rotate(45deg) translateX(8.5px) translateY(-2.9px);
-}
-
-.scroll-to-top-hidden {
-    pointer-events: none;
-    position: fixed;
-    width: 22px;
-    height: 20px;
-    opacity: 0;
-    right: 18px;
-    top: 20px;
-    transition: 0.3s;
 }

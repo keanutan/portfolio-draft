@@ -68,16 +68,16 @@ class aboutme extends Component {
                     </div>
                     <div className="about-user-info-text-container">
                         <div className="about-user-info-text">
-                            <p>
+                            <p className="about-me-user-info-text-paragraph">
                                 Hello there,
                             </p>
-                            <p>
+                            <p className="about-me-user-info-text-paragraph">
                                 I'm Keanu Natchev
                             </p>
-                            <p>
+                            <p className="about-me-user-info-text-paragraph">
                                 Software Engineering Student at McGill University completing my third year.
                             </p>
-                            <p>
+                            <p className="about-me-user-info-text-paragraph">
                                 I am a very passionate about software development and design which you can check out by looking at projects I have completed in the past.
                             </p>
                             <div className="resume-contact-button-section">
