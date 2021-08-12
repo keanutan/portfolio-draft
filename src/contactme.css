@@ -15,7 +15,6 @@
     transition: 0.3s;
 }
 
-
 .contact-form-wrapper {
     display: flex;
     flex-direction: column;
@@ -28,42 +27,58 @@
 
 .contact-form-user-info {
     width: 80vw;
-    height: 20vh;
+    max-height: 20vh;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    /* border: 1px solid white; */
 }
 
 .contact-form-user-input-section {
-    /* border: 1px solid white; */
     text-align: center;
 }
+
 .contact-form-user-input-section-title {
     color: grey;
+    transition: 0.3s;
 }
 
-.contact-form-user-first-name,
-.contact-form-user-last-name,
-.contact-form-user-email,
-.contact-form-user-message {
+.contact-form-user-first-name, .contact-form-user-last-name, .contact-form-user-email, .contact-form-user-message {
     background-color: rgb(33, 33, 33);
     border: 1px solid grey;
     width: min(18vw, 25vw);
     color: grey;
+    margin-bottom: 10px;
 }
 
 .contact-form-user-email {
     width: min(25vw, 25vw);
-    
 }
 
 .contact-form-user-message {
-    /* background-color: rgb(33, 33, 33); */
-    /* border: 1px solid grey; */
     height: 40vh;
     width: 80vw;
-    /* text-align: initial; */
-    /* display: flex; */
-    /* align-items: ; */
+    resize: none;
+}
+
+.contact-me-user-info-picture {
+    width: 35vw;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-me-profile-picture {
+    height: 90%;
+    border: 1px solid black;
+    padding: 3px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+@media screen and (max-width: 500px) {
+    .contact-form-user-input-section-title {
+        font-size: 12px;
+        transition: 0.3s;
+    }
 }

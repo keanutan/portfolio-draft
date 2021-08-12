@@ -32,8 +32,8 @@ class contactme extends Component {
                 <h3 className="title">Contact Me</h3>
                 <Navbar pageName={this.state.componentName}></Navbar>
                 <div className="contact-form-wrapper">
-                    <div className="about-user-info-picture">
-                        <img className="profile-picture" src={pic} />
+                    <div className="contact-me-user-info-picture">
+                        <img className="contact-me-profile-picture" src={pic} />
                     </div>
                     <div className="contact-form-user-info">
                         <div className="contact-form-user-input-section">
