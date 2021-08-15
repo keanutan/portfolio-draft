@@ -22,7 +22,7 @@ export default class Navbar extends Component {
                     <div className={(this.state.burger) ? "burger-slice-open" : "burger-slice"}></div>
                     <div className={(this.state.burger) ? "burger-slice-open" : "burger-slice"}></div>
                 </div>
-                <ul className={(this.state.burger) ? "mo" : "mm"}>
+                <ul className={(this.state.burger) ? "menu-open" : "menu-closed"}>
                     <Link to="/">
                         <h1 className={(this.state.currentPage == "home") ? "page-title-hidden" : "page-title"}>Home</h1>
                     </Link>

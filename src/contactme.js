@@ -28,8 +28,8 @@ class contactme extends Component {
         document.title = "Keanu Natchev | Contact Me";
         return (
 
-            <div className={(this.state.mountedContact) ? "wrapper-contact" : "wrapper-black-contact"} onLoad={this.wrapperTransition}>
-                <h3 className="title">Contact Me</h3>
+            <div className={(this.state.mountedContact) ? "wrapper-contact-me" : "wrapper-black-contact-me"} onLoad={this.wrapperTransition}>
+                <h3 className="contact-me-title">Contact Me</h3>
                 <Navbar pageName={this.state.componentName}></Navbar>
                 <div className="contact-form-wrapper">
                     <div className="contact-me-user-info-picture">

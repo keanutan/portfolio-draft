@@ -54,8 +54,8 @@ class aboutme extends Component {
 
         return (
 
-            <div className={(this.state.mounted) ? "wrapper" : "wrapper-white"} onLoad={this.wrapperTransition}>
-                <h3 className="title">About Me</h3>
+            <div className={(this.state.mounted) ? "wrapper-about-me" : "wrapper-black-about-me"} onLoad={this.wrapperTransition}>
+                <h3 className="about-me-title">About Me</h3>
                 <ScrollToTop></ScrollToTop>
                 {/* <div className={(this.state.outOfRange) ? "scroll-to-top" : "scroll-to-top-hidden"} onClick={this.goToTop}>
                     <div className="arrow-left"></div>

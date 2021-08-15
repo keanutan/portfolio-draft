@@ -1,4 +1,4 @@
-.wrapper-contact {
+.wrapper-contact-me {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -10,7 +10,7 @@
     background-color: rgb(33, 33, 33);
 }
 
-.wrapper-black-contact {
+.wrapper-black-contact-me {
     opacity: 0;
     transition: 0.3s;
 }
@@ -23,6 +23,17 @@
     height: 60vh;
     margin-top: 10vh;
     margin-bottom: 20vh;
+}
+
+.contact-me-title {
+    position: absolute;
+    float: right;
+    top: 0px;
+    left: 40px;
+    height: auto;
+    font-weight: 400;
+    font-size: 23px;
+    color: rgb(143, 143, 143);
 }
 
 .contact-form-user-info {

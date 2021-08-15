@@ -277,8 +277,8 @@ class projects extends Component {
 
         return (
 
-            <div className={(this.state.mountedProjects) ? "wrapper-contact" : "wrapper-black-contact"} onLoad={this.wrapperTransitionProjects}>
-                <h3 className="title">Projects</h3>
+            <div className={(this.state.mountedProjects) ? "wrapper-projects" : "wrapper-black-projects"} onLoad={this.wrapperTransitionProjects}>
+                <h3 className="projects-title">Projects</h3>
                 <Navbar pageName={this.state.componentName}></Navbar>
                 <div className="projects-window-wrapper">
                     <div className="projects-window-top-bar">

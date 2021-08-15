@@ -1,10 +1,8 @@
-* {}
-
 body {
     background-color: black;
 }
 
-.wrapper {
+.wrapper-about-me {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -14,22 +12,20 @@ body {
     background-color: rgb(33, 33, 33);
 }
 
-.wrapper-white {
+.wrapper-black-about-me {
     opacity: 0;
     transition: 0.3s;
 }
 
-.title {
+.about-me-title {
     position: absolute;
     float: right;
     top: 0px;
     left: 40px;
-    /* width: 100%; */
     height: auto;
     font-weight: 400;
-    font-size: 2.5vh;
+    font-size: 23px;
     color: rgb(143, 143, 143);
-    /* border: 2px solid black; */
 }
 
 .about-user-info {
@@ -43,21 +39,15 @@ body {
 }
 
 .about-user-info-resume {
-    /* background-color: bisque; */
-    /* padding-bottom: 400px; */
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* align-content: center; */
     width: 80vw;
-    /* height: 80vh; */
     margin-top: 10vh;
     margin-bottom: 10vh;
-    /* border: 1px solid black; */
 }
 
 .about-user-info:last-child {
-    /* margin-bottom: 10vh; */
 }
 
 .about-user-info-picture {
@@ -200,6 +190,7 @@ a {
 .about-me-user-info-text-paragraph {
     text-align: justify;
     margin-left: 10px;
+    font-size: 14px;
     color: grey;
 }
 
@@ -249,7 +240,6 @@ a {
     transition: 0.3s;
 }
 
-
 ::-webkit-scrollbar {
     width: 10px;
     background-color: rgb(72, 72, 72);
@@ -268,7 +258,7 @@ a {
 }
 
 .technical-skills-title, .work-experience-title, .personal-projects-title, .university-projects-title, .education-title {
-    color: grey;
+    color: rgb(177, 177, 177);
 }
 
 .technical-skills-content {
@@ -291,7 +281,7 @@ a {
 .technical-skills-section-list-title {
     font-size: 14px;
     font-weight: 600;
-    color: grey;
+    color: rgb(163, 163, 163);
 }
 
 .work-experience, .personal-projects, .university-projects, .education {
@@ -327,7 +317,7 @@ a {
     margin-bottom: 10px;
     width: fit-content;
     display: inline-block;
-    color: grey;
+    color: rgb(170, 170, 170);
 }
 
 .university-projects-content-entry-class-title, .education-content-entry-class-title {
@@ -353,8 +343,8 @@ a {
     margin-left: 20px;
     margin-right: 10px;
     text-align: justify;
-    font-size: 12px;
-    color: grey;
+    font-size: 13px;
+    color: rgb(163, 163, 163);
     padding-bottom: 5px;
 }
 
@@ -391,7 +381,7 @@ strong {
     flex-wrap: wrap;
 }
 
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 850px) {
     .about-user-info {
         flex-direction: column;
         transition: 0.3s;
@@ -410,12 +400,18 @@ strong {
         margin-top: 10px;
         transition: 0.3s;
     }
-    
     .about-me-user-info-text-paragraph {
         font-size: 13px;
         transition: 0.3s;
     }
-    .technical-skills-section-list-title {
-
+    .work-experience-content-entry-date, .personal-projects-content-entry-date, .university-projects-content-entry-date, .education-content-entry-date {
+        float: none;
+        margin-right: 0px;
+        font-size: 12px;
+        transition: 0.3s;
+    }
+    .university-projects-content-entry-class-title, .education-content-entry-class-title {
+        font-size: 12px;
+        transition: 0.3s;
     }
 }
