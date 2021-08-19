@@ -21,36 +21,29 @@ class home extends Component {
         document.title = "Keanu Natchev | Portfolio";
 
         return (
-            // <div className="App">
             <div className={(this.state.hell) ? "wrapper-home" : "wrapper-home-white"} onLoad={this.wrapperrTransition}>
                 <div className="container-home">
                     <div className="user-info-home">
                         <img className="profile-picture-home" src={picture} />
-                        <div className="user-info-home-section">
-                            <div>
-                                <h1 className="user-info-element">Keanu Natchev</h1>
-                            </div>
-                            <div>
-                                <h1 className="user-info-element">Software Engineering Student at McGill University</h1>
-                            </div>
-                        </div>
+                        <h1 className="user-info-element">Keanu Natchev</h1>
+                        <h1 className="user-info-element">Software Engineering Student at McGill University</h1>
                     </div>
                     <div className="menu">
-                        <div className="menu-element">
-                            <Link className="page-link" to="/about" >
+                        <Link className="page-link" to="/about" >
+                            <div className="menu-element">
                                 <h1 className="page-name">About Me</h1>
-                            </Link>
-                        </div>
-                        <div className="menu-element">
-                            <Link className="page-link" to="/contact">
+                            </div>
+                        </Link>
+                        <Link className="page-link" to="/contact">
+                            <div className="menu-element">
                                 <h1 className="page-name">Contact</h1>
-                            </Link>
-                        </div>
-                        <div className="menu-element">
-                            <Link className="page-link" to="/projects">
+                            </div>
+                        </Link>
+                        <Link className="page-link" to="/projects">
+                            <div className="menu-element">
                                 <h1 className="page-name">Projects</h1>
-                            </Link>
-                        </div>
+                            </div>
+                        </Link>
                     </div>
                 </div>
                 <Footer />
