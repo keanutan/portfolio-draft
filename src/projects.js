@@ -81,7 +81,7 @@ class projects extends Component {
     }
 
     FileSystemSidebarDisplay(props) {
-        console.log(props);
+        // console.log(props);
         switch (props) {
             case 'Keanutan':
                 return (
@@ -177,9 +177,95 @@ class projects extends Component {
         }
     }
 
+    FileSystemDisplayTEST(props) {
+        console.log(props);
+        if (props = 'Keanu') {
+            return (
+                <div className="projects-window-file-system-files">
+                    {
+                        FileSystem.Subfolders.map((element) => {
+                            return (
+                                <div className="projects-window-file-system-files-item-wrapper" onClick={() => { this.setState({ folderName: element.Name }); this.visitedFoldersUpdate(element.Parent) }}>
+                                    <div>
+                                        {element.Image}
+                                    </div>
+                                    <div className="projects-window-file-system-files-item-title">
+                                        {element.Name}
+                                    </div>
+                                </div>
+                            )
+                        })
+                    }
+                </div>
+            )
+        }
+        if (props = 'Projects') {
+            return (
+                <div className="projects-window-file-system-files">
+                    {
+                        FileSystem.Subfolders[0].Subfolders.map((element) => {
+                            return (
+                                <div className="projects-window-file-system-files-item-wrapper" onClick={() => { this.setState({ folderName: element.Name }); this.visitedFoldersUpdate(element.Parent) }}>
+                                    <div>
+                                        {element.Image}
+                                    </div>
+                                    <div className="projects-window-file-system-files-item-title">
+                                        {element.Name}
+                                    </div>
+                                </div>
+                            )
+                        })
+                    }
+                </div>
+            )
+        }
+
+        if (props = 'Java') {
+            return (
+                <div className="projects-window-file-system-files">
+                    {
+                        FileSystem.Subfolders[0].Subfolders[0].Subfolders.map((element) => {
+                            return (
+                                <div className="projects-window-file-system-files-item-wrapper" onClick={() => { this.linkOpen(element.Link) }}>
+                                    <div>
+                                        {element.Image}
+                                    </div>
+                                    <div className="projects-window-file-system-files-item-title">
+                                        {element.Name}
+                                    </div>
+                                </div>
+                            )
+                        })
+                    }
+                </div>
+            )
+        }
+
+        if (props = 'Python') {
+            return (
+                <div className="projects-window-file-system-files">
+                    {
+                        FileSystem.Subfolders[0].Subfolders[1].Subfolders.map((element) => {
+                            return (
+                                <div className="projects-window-file-system-files-item-wrapper" onClick={() => { this.linkOpen(element.Link) }}>
+                                    <div>
+                                        {element.Image}
+                                    </div>
+                                    <div className="projects-window-file-system-files-item-title">
+                                        {element.Name}
+                                    </div>
+                                </div>
+                            )
+                        })
+                    }
+                </div>
+            )
+        }
+    }
+
 
     FileSystemDisplay(props) {
-        console.log(props);
+        // console.log(props);
         switch (props) {
             case 'Keanutan':
                 return (
@@ -200,7 +286,7 @@ class projects extends Component {
                         }
                     </div>
                 )
-                break;
+                // break;
             case 'Projects':
                 return (
                     <div className="projects-window-file-system-files">
@@ -220,7 +306,7 @@ class projects extends Component {
                         }
                     </div>
                 )
-                break;
+                // break;
             case 'Java':
                 return (
                     <div className="projects-window-file-system-files">
@@ -240,7 +326,7 @@ class projects extends Component {
                         }
                     </div>
                 )
-                break;
+                // break;
             case 'Python':
                 return (
                     <div className="projects-window-file-system-files">
@@ -260,13 +346,13 @@ class projects extends Component {
                         }
                     </div>
                 )
-                break;
+                // break;
 
             default:
                 return (
                     <h5>Nothing</h5>
                 )
-                break;
+                // break;
         }
     }
 

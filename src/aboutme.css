@@ -415,3 +415,8 @@ strong {
         transition: 0.3s;
     }
 }
+
+.about-me-user-info-text-paragraph-link {
+    text-decoration: underline;
+    color: grey;
+}

@@ -2,7 +2,8 @@ import React from 'react';
 import { useState, Component } from 'react';
 import { BrowserRouter as Router, Link } from 'react-router-dom';
 import './aboutme.css';
-import pic from './pp.jpg'; // with import
+// import pic from './pp.jpg'; // with import
+import pic from './export-3-07568.jpg'; // with import
 import { UniversityProjects } from './UniversityProjects';
 import { TechnicalSkills } from './TechnicalSkills';
 import resume from './Natchev_Keanu_Resume.pdf';
@@ -47,7 +48,7 @@ class aboutme extends Component {
 
     render() {
         document.title = "Keanu Natchev | About Me";
-        
+
         // window.onscroll = () => {
         //     this.revealScroll();
         // }
@@ -78,7 +79,17 @@ class aboutme extends Component {
                                 Software Engineering Student at McGill University completing my third year.
                             </p>
                             <p className="about-me-user-info-text-paragraph">
-                                I am a very passionate about software development and design which you can check out by looking at projects I have completed in the past.
+                                I am very passionate about software development and design which you can check out by looking at the&nbsp;
+                                <Link className="about-me-user-info-text-paragraph-link" to="/projects">
+                                    projects
+                                </Link>
+                                &nbsp;section of my portfolio as well as taking a look at my Resume found below.
+                            </p>
+
+                            <p className="about-me-user-info-text-paragraph">
+                                Moreover, I am eager to start my professional software engineering carreer by doing an internship.
+                                
+                                For this purpose, you may contact me through the contact page of my portfolio by clicking the Contact Me button below.
                             </p>
                             <div className="resume-contact-button-section">
                                 <a className="resume-link" href={resume} target='_blank' rel='noopener noreferrer'>View Resume</a>

@@ -1,7 +1,8 @@
 import React from 'react';
 import { useState, Component } from 'react';
 import './contactme.css';
-import pic from './pp.jpg'; // with import
+// import pic from './pp.jpg'; // with import
+import pic from './export-3-07568.jpg'; // with import
 import Navbar from './Components/Navbar';
 import Footer from './Components/Footer';
 
