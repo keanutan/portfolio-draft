@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/portfolio-draft/static/css/main.73f93f76.chunk.css",
-    "main.js": "/portfolio-draft/static/js/main.4c6c7512.chunk.js",
-    "main.js.map": "/portfolio-draft/static/js/main.4c6c7512.chunk.js.map",
+    "main.css": "/portfolio-draft/static/css/main.d8b7348f.chunk.css",
+    "main.js": "/portfolio-draft/static/js/main.2a4cbefe.chunk.js",
+    "main.js.map": "/portfolio-draft/static/js/main.2a4cbefe.chunk.js.map",
     "runtime-main.js": "/portfolio-draft/static/js/runtime-main.ea0d9e15.js",
     "runtime-main.js.map": "/portfolio-draft/static/js/runtime-main.ea0d9e15.js.map",
     "static/js/2.2909bfa1.chunk.js": "/portfolio-draft/static/js/2.2909bfa1.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.23892287.chunk.js": "/portfolio-draft/static/js/3.23892287.chunk.js",
     "static/js/3.23892287.chunk.js.map": "/portfolio-draft/static/js/3.23892287.chunk.js.map",
     "index.html": "/portfolio-draft/index.html",
-    "static/css/main.73f93f76.chunk.css.map": "/portfolio-draft/static/css/main.73f93f76.chunk.css.map",
+    "static/css/main.d8b7348f.chunk.css.map": "/portfolio-draft/static/css/main.d8b7348f.chunk.css.map",
     "static/js/2.2909bfa1.chunk.js.LICENSE.txt": "/portfolio-draft/static/js/2.2909bfa1.chunk.js.LICENSE.txt",
     "static/media/Binary_Search_Tree_Visualizer_Icon.6e5719b6.svg": "/portfolio-draft/static/media/Binary_Search_Tree_Visualizer_Icon.6e5719b6.svg",
     "static/media/DSC02062.d4aaf7c0.JPG": "/portfolio-draft/static/media/DSC02062.d4aaf7c0.JPG",
@@ -22,7 +22,6 @@
     "static/media/export-3-07568.80caf674.jpg": "/portfolio-draft/static/media/export-3-07568.80caf674.jpg",
     "static/media/folder.181d5c50.svg": "/portfolio-draft/static/media/folder.181d5c50.svg",
     "static/media/forward.dc9f2143.svg": "/portfolio-draft/static/media/forward.dc9f2143.svg",
-    "static/media/french.43ba837d.svg": "/portfolio-draft/static/media/french.43ba837d.svg",
     "static/media/gherkin.38ba87bd.svg": "/portfolio-draft/static/media/gherkin.38ba87bd.svg",
     "static/media/github.c4216320.svg": "/portfolio-draft/static/media/github.c4216320.svg",
     "static/media/gradle.fb15e4fb.svg": "/portfolio-draft/static/media/gradle.fb15e4fb.svg",
@@ -44,7 +43,7 @@
   "entrypoints": [
     "static/js/runtime-main.ea0d9e15.js",
     "static/js/2.2909bfa1.chunk.js",
-    "static/css/main.73f93f76.chunk.css",
-    "static/js/main.4c6c7512.chunk.js"
+    "static/css/main.d8b7348f.chunk.css",
+    "static/js/main.2a4cbefe.chunk.js"
   ]
 }
