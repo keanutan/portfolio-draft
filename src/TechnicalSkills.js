@@ -5,6 +5,7 @@ export const TechnicalSkills = [
             'Java',
             'C',
             'Python',
+            'CUDA',
             'Javascript',
             'VHDL',
             'ARM Assembly',
