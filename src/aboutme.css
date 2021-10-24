@@ -275,7 +275,8 @@ a {
 }
 
 .technical-skills-section-list {
-    list-style-type: "- ";
+    /* list-style-type: "- "; */
+    align-items: center;
 }
 
 .technical-skills-section-list-title {
