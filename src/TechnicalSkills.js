@@ -22,7 +22,7 @@ export const TechnicalSkills = [
             <img alt="Gradle" src="https://shields.io/badge/Gradle-333333?logo=gradle&style=for-the-badge&logoColor=white"></img>,
             <img alt="Maven" src="https://shields.io/badge/Maven-333333?logo=apachemaven&style=for-the-badge&logoColor=white"></img>,
             <img alt="Heroku" src="https://shields.io/badge/Heroku-333333?logo=heroku&style=for-the-badge&logoColor=white"></img>,
-            <img alt="Travis CI" src="https://shields.io/badge/Tarvis%20CI-333333?logo=travisci&style=for-the-badge&logoColor=white"></img>
+            <img alt="Travis CI" src="https://shields.io/badge/Travis%20CI-333333?logo=travisci&style=for-the-badge&logoColor=white"></img>
         ]
     },
     {
