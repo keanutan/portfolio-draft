@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Link } from 'react-router-dom';
 import Route from 'react-router-dom/Route';
 import './home.css';
 import Footer from './Components/Footer';
-import picture from './DSC02062.JPG';
+// import picture from './DSC02062.JPG';
 
 
 class home extends Component {
@@ -24,7 +24,7 @@ class home extends Component {
             <div className={(this.state.hell) ? "wrapper-home" : "wrapper-home-white"} onLoad={this.wrapperrTransition}>
                 <div className="container-home">
                     <div className="user-info-home">
-                        <img className="profile-picture-home" src={picture} />
+                        <img className="profile-picture-home" />
                         <h1 className="user-info-element">Keanu Natchev</h1>
                         <h1 className="user-info-element">Software Engineering Student at McGill University</h1>
                     </div>

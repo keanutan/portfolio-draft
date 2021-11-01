@@ -3,10 +3,10 @@ import { useState, Component } from 'react';
 import { BrowserRouter as Router, Link } from 'react-router-dom';
 import './aboutme.css';
 // import pic from './pp.jpg'; // with import
-import pic from './export-3-07568.jpg'; // with import
-import { UniversityProjects } from './UniversityProjects';
-import { TechnicalSkills } from './TechnicalSkills';
-import resume from './Natchev_Keanu_Resume.pdf';
+import profile from './Components/PersonalImages/profile.jpg'; // with import
+import { UniversityProjects } from './Components/ComponentData/UniversityProjects';
+import { TechnicalSkills } from './Components/ComponentData/TechnicalSkills';
+import resume from './Components/Resume/Natchev_Keanu_Resume.pdf';
 import Navbar from './Components/Navbar';
 import ScrollToTop from './Components/ScrollToTop';
 import Footer from './Components/Footer';
@@ -56,7 +56,7 @@ class aboutme extends Component {
         return (
 
             <div className={(this.state.mounted) ? "wrapper-about-me" : "wrapper-black-about-me"} onLoad={this.wrapperTransition}>
-                <h3 className="about-me-title">About Me</h3>
+                <h3 className="about-me-title">About Me [ALMOST COMPLETE]</h3>
                 <ScrollToTop></ScrollToTop>
                 {/* <div className={(this.state.outOfRange) ? "scroll-to-top" : "scroll-to-top-hidden"} onClick={this.goToTop}>
                     <div className="arrow-left"></div>
@@ -65,7 +65,7 @@ class aboutme extends Component {
                 <Navbar pageName={this.state.componentName}></Navbar>
                 <div className="about-user-info">
                     <div className="about-user-info-picture">
-                        <img className="profile-picture" src={pic} />
+                        <img className="profile-picture" src={profile} />
                     </div>
                     <div className="about-user-info-text-container">
                         <div className="about-user-info-text">

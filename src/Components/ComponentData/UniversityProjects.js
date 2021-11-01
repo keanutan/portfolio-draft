@@ -1,14 +1,14 @@
-import anime_logo from './anime.svg'; // with import
-import react_logo from './react.svg'; // with import
-import webots_logo from './webots.png'; // with import
-import leocad_logo from './leocad.svg'; // with import
-import vue_logo from './vue.svg'; // with import
-import heroku_logo from './heroku.svg'; // with import
-import umple_logo from './umple.svg'; // with import
-import gherkin_logo from './gherkin.svg'; // with import
-import springboot_logo from './springboot.svg'; // with import
-import gradle_logo from './gradle.svg'; // with import
-import travisci_logo from './travisci.svg'; // with import
+import anime_logo from '../LogoImages/anime.svg'; // with import
+import react_logo from '../LogoImages/react.svg'; // with import
+import webots_logo from '../LogoImages/webots.png'; // with import
+import leocad_logo from '../LogoImages/leocad.svg'; // with import
+import vue_logo from '../LogoImages/vue.svg'; // with import
+import heroku_logo from '../LogoImages/heroku.svg'; // with import
+import umple_logo from '../LogoImages/umple.svg'; // with import
+import gherkin_logo from '../LogoImages/gherkin.svg'; // with import
+import springboot_logo from '../LogoImages/springboot.svg'; // with import
+import gradle_logo from '../LogoImages/gradle.svg'; // with import
+import travisci_logo from '../LogoImages/travisci.svg'; // with import
 // import pooop from './tools.svg'; // with import
 
 

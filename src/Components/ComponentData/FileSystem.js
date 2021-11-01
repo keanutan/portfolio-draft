@@ -1,6 +1,6 @@
-import folder from './Components/FileSystemComponents/folder.svg';
-import Binary_Search_Tree_Visualizer_Icon from './Components/FileSystemComponents/Binary_Search_Tree_Visualizer_Icon.svg';
-import Fast_Fourier_Transform_Image_Processor_Icon from './Components/FileSystemComponents/Fast_Fourier_Transform_Image_Processor_Icon.svg';
+import folder from '../FileSystemComponentsImages/folder.svg';
+import Binary_Search_Tree_Visualizer_Icon from '../FileSystemComponentsImages/Binary_Search_Tree_Visualizer_Icon.svg';
+import Fast_Fourier_Transform_Image_Processor_Icon from '../FileSystemComponentsImages/Fast_Fourier_Transform_Image_Processor_Icon.svg';
 
 export const FileSystem = {
     Name: 'Keanutan',

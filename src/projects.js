@@ -1,16 +1,16 @@
 import React from 'react';
 import { useState, Component } from 'react';
 import './projects.css';
-import { FileSystem } from './FileSystem';
-import pic from './pp.jpg'; // with import
+import { FileSystem } from './Components/ComponentData/FileSystem';
+// import pic from './pp.jpg'; // with import
 import Navbar from './Components/Navbar';
-import close from './Components/FileSystemComponents/close.svg';
-import minimize from './Components/FileSystemComponents/minimize.svg';
-import tab from './Components/FileSystemComponents/tab.svg';
-import back from './Components/FileSystemComponents/back.svg';
-import forward from './Components/FileSystemComponents/forward.svg';
-import harddriveicon from './Components/FileSystemComponents/harddriveicon.svg';
-import folder from './Components/FileSystemComponents/folder.svg';
+import close from './Components/FileSystemComponentsImages/close.svg';
+import minimize from './Components/FileSystemComponentsImages/minimize.svg';
+import tab from './Components/FileSystemComponentsImages/tab.svg';
+import back from './Components/FileSystemComponentsImages/back.svg';
+import forward from './Components/FileSystemComponentsImages/forward.svg';
+import harddriveicon from './Components/FileSystemComponentsImages/harddriveicon.svg';
+// import folder from './Components/FileSystemComponents/folder.svg';
 import Footer from './Components/Footer';
 
 
@@ -364,7 +364,7 @@ class projects extends Component {
         return (
 
             <div className={(this.state.mountedProjects) ? "wrapper-projects" : "wrapper-black-projects"} onLoad={this.wrapperTransitionProjects}>
-                <h3 className="projects-title">Projects</h3>
+                <h3 className="projects-title">Projects [UNDER CONSTRUCTION]</h3>
                 <Navbar pageName={this.state.componentName}></Navbar>
                 <div className="projects-window-wrapper">
                     <div className="projects-window-top-bar">
