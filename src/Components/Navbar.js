@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './Navbar.css';
 
 export default class Navbar extends Component {
-
+    
     navbar_en = {
         home: 'Home',
         aboutMe: 'About Me',
@@ -18,13 +18,15 @@ export default class Navbar extends Component {
     };
 
     state = {
+        // language: 'English',
         burger: false,
         currentPage: this.props.pageName,
-        home: (localStorage.getItem('language') == 'English') ? (this.navbar_en.home) : (this.navbar_fr.home),
-        aboutMe: (localStorage.getItem('language') == 'English') ? (this.navbar_en.aboutMe) : (this.navbar_fr.aboutMe),
-        contact: (localStorage.getItem('language') == 'English') ? (this.navbar_en.contact) : (this.navbar_fr.contact),
-        projects: (localStorage.getItem('language') == 'English') ? (this.navbar_en.projects) : (this.navbar_fr.projects),
+        home: (localStorage.getItem('language') == 'English' || localStorage.getItem('language') != 'Français') ? (this.navbar_en.home) : (this.navbar_fr.home),
+        aboutMe: (localStorage.getItem('language') == 'English' || localStorage.getItem('language') != 'Français') ? (this.navbar_en.aboutMe) : (this.navbar_fr.aboutMe),
+        contact: (localStorage.getItem('language') == 'English' || localStorage.getItem('language') != 'Français') ? (this.navbar_en.contact) : (this.navbar_fr.contact),
+        projects: (localStorage.getItem('language') == 'English' || localStorage.getItem('language') != 'Français') ? (this.navbar_en.projects) : (this.navbar_fr.projects),
     };
+
 
     handleBurgerClick = () => {
         this.setState({ burger: !this.state.burger });

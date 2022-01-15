@@ -2,8 +2,6 @@ import React from 'react';
 import { useState, Component } from 'react';
 import { BrowserRouter as Router, Link } from 'react-router-dom';
 import './aboutme.css';
-// import pic from './pp.jpg'; // with import
-// import profile from './Components/PersonalImages/profile.jpg'; // with import
 import profile from './Components/PersonalImages/profile_small.jpg'; // with import
 import { UniversityProjects, UniversityProjectsEnglish, UniversityProjectsFrancais } from './Components/ComponentData/UniversityProjects';
 import { TechnicalSkills } from './Components/ComponentData/TechnicalSkills';
@@ -13,7 +11,6 @@ import resume_fr from './Components/Resume/Natchev_Keanu_CV_francais.pdf';
 import Navbar from './Components/Navbar';
 import ScrollToTop from './Components/ScrollToTop';
 import Footer from './Components/Footer';
-
 
 
 class aboutme extends Component {
@@ -37,53 +34,52 @@ class aboutme extends Component {
     };
 
     state = {
+        language: 'English',
         componentName: 'aboutme',
         mounted: false,
         intro: false,
         mobileWindow: false,
         windowSize: window.innerWidth,
         pictureWidth: "80vw",
-        // outOfRange: false,
         p: window.pageYOffset,
-        pageTitle: (localStorage.getItem('language') == 'English') ? (this.aboutme_en.pageTitle) : (this.aboutme_fr.pageTitle),
-        aboutMeData: (localStorage.getItem('language') == 'English') ? (this.aboutme_en) : (this.aboutme_fr),
-        // data: (localStorage.getItem('language') == 'English') ? (this.home_en.data) : (this.home_fr.data),
-        // aboutMe: (localStorage.getItem('language') == 'English') ? (this.home_en.aboutMe) : (this.home_fr.aboutMe),
-        // contact: (localStorage.getItem('language') == 'English') ? (this.home_en.contact) : (this.home_fr.contact),
-        // projects: (localStorage.getItem('language') == 'English') ? (this.home_en.projects) : (this.home_fr.projects),
+        pageTitle: (localStorage.getItem('language') == 'English' || localStorage.getItem('language') != 'Français') ? (this.aboutme_en.pageTitle) : (this.aboutme_fr.pageTitle),
+        aboutMeData: (localStorage.getItem('language') == 'English' || localStorage.getItem('language') != 'Français') ? (this.aboutme_en) : (this.aboutme_fr),
     };
-
-    // revealScroll = () => {
-    //     if (window.pageYOffset > 400) {
-    //         this.setState({ outOfRange: true });
-    //     }
-    //     else {
-    //         this.setState({ outOfRange: false });
-    //     }
-    // }
-
-    // goToTop = () => {
-    //     window.scrollTo({
-    //         top: 0,
-    //         behavior: 'smooth'
-    //     });
-    // }
 
     wrapperTransition = () => {
         this.setState({ mounted: true });
     }
 
-    render() {
-        // document.title = "Keanu Natchev | About Me";
-        document.title = (localStorage.getItem('language') == 'English') ? ('Keanu Natchev | About Me') : ('Keanu Natchev | À Propos');
+    // updateAboutMeStatesBasedOnLanguage = () => {
+    //     switch (localStorage.getItem('language')) {
+    //         case 'English':
+    //             this.setState({ pageTitle: this.aboutme_en.pageTitle });
+    //             this.setState({ aboutMeData: this.aboutme_en });
+    //             break;
 
-        // window.onscroll = () => {
-        //     this.revealScroll();
-        // }
+    //         case 'Français':
+    //             this.setState({ pageTitle: this.aboutme_fr.pageTitle });
+    //             this.setState({ aboutMeData: this.aboutme_fr });
+    //             break;
+
+    //         default:
+    //             this.setState({ pageTitle: this.aboutme_en.pageTitle });
+    //             this.setState({ aboutMeData: this.aboutme_en });
+    //             break;
+    //     }
+    // }
+
+    initializationAboutMe = () => {
+        this.wrapperTransition();
+        // this.updateAboutMeStatesBasedOnLanguage();
+    }
+
+    render() {
+        document.title = (localStorage.getItem('language') == 'English' || localStorage.getItem('language') != 'Français') ? ('Keanu Natchev | About Me') : ('Keanu Natchev | À Propos');
 
         return (
 
-            <div className={(this.state.mounted) ? "wrapper-about-me" : "wrapper-black-about-me"} onLoad={this.wrapperTransition}>
+            <div className={(this.state.mounted) ? "wrapper-about-me" : "wrapper-black-about-me"} onLoad={this.initializationAboutMe}>
                 <h3 className="about-me-title">{this.state.pageTitle}</h3>
                 <ScrollToTop></ScrollToTop>
                 {/* <div className={(this.state.outOfRange) ? "scroll-to-top" : "scroll-to-top-hidden"} onClick={this.goToTop}>
@@ -218,7 +214,7 @@ class aboutme extends Component {
                                     </div>
                                 )
                             })} */}
-                            {((localStorage.getItem('language') == 'English') ? (UniversityProjectsEnglish) : (UniversityProjectsFrancais)).map((project, index) => {
+                            {((localStorage.getItem('language') == 'English' || localStorage.getItem('language') != 'Français') ? (UniversityProjectsEnglish) : (UniversityProjectsFrancais)).map((project, index) => {
                                 return (
                                     <div className="university-projects-content-entry">
                                         <div className="university-projects-content-entry-title-date-section">

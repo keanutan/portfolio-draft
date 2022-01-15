@@ -8,10 +8,6 @@ import Footer from './Components/Footer';
 
 class home extends Component {
 
-
-
-
-
     home_en = {
         data: 'Software Engineering Student at McGill University',
         aboutMe: 'About Me',
@@ -25,26 +21,52 @@ class home extends Component {
         projects: 'Projets',
     }
 
-
-    
     state = {
         hell: false,
-        data: (localStorage.getItem('language') == 'English') ? (this.home_en.data) : (this.home_fr.data),
-        aboutMe: (localStorage.getItem('language') == 'English') ? (this.home_en.aboutMe) : (this.home_fr.aboutMe),
-        contact: (localStorage.getItem('language') == 'English') ? (this.home_en.contact) : (this.home_fr.contact),
-        projects: (localStorage.getItem('language') == 'English') ? (this.home_en.projects) : (this.home_fr.projects),
+        data: (localStorage.getItem('language') == 'English' || localStorage.getItem('language') != 'Français') ? (this.home_en.data) : (this.home_fr.data),
+        aboutMe: (localStorage.getItem('language') == 'English' || localStorage.getItem('language') != 'Français') ? (this.home_en.aboutMe) : (this.home_fr.aboutMe),
+        contact: (localStorage.getItem('language') == 'English' || localStorage.getItem('language') != 'Français') ? (this.home_en.contact) : (this.home_fr.contact),
+        projects: (localStorage.getItem('language') == 'English' || localStorage.getItem('language') != 'Français') ? (this.home_en.projects) : (this.home_fr.projects),
     };
-    
+
+    // updateStatesBasedOnLanguage = () => {
+    //     switch (localStorage.getItem('language')) {
+    //         case 'English':
+    //             this.setState({ data: this.home_en.data });
+    //             this.setState({ aboutMe: this.home_en.aboutMe });
+    //             this.setState({ contact: this.home_en.contact });
+    //             this.setState({ projects: this.home_en.projects });
+    //             break;
+
+    //         case 'Français':
+    //             this.setState({ data: this.home_fr.data });
+    //             this.setState({ aboutMe: this.home_fr.aboutMe });
+    //             this.setState({ contact: this.home_fr.contact });
+    //             this.setState({ projects: this.home_fr.projects });
+    //             break;
+
+    //         default:
+    //             this.setState({ data: this.home_en.data });
+    //             this.setState({ aboutMe: this.home_en.aboutMe });
+    //             this.setState({ contact: this.home_en.contact });
+    //             this.setState({ projects: this.home_en.projects });
+    //             break;
+    //     }
+    // }
+
+
+
+
+
     wrapperrTransition = () => {
         this.setState({ hell: true });
     }
-    
+
     poop = () => {
         if (localStorage.getItem('language') == 'English') {
             return this.home_en.data;
         }
-        else
-        {
+        else {
             return this.home_fr.data;
         }
     }
@@ -61,6 +83,10 @@ class home extends Component {
     //     console.log(localStorage.getItem('language'));
     // }
 
+    initialization = () => {
+        this.wrapperrTransition();
+        // this.updateStatesBasedOnLanguage();
+    }
 
     render() {
         document.title = "Keanu Natchev | Portfolio";
@@ -68,7 +94,7 @@ class home extends Component {
         // this.componentDidUpdate();
 
         return (
-            <div className={(this.state.hell) ? "wrapper-home" : "wrapper-home-white"} onLoad={this.wrapperrTransition}>
+            <div className={(this.state.hell) ? "wrapper-home" : "wrapper-home-white"} onLoad={this.initialization}>
                 <div className="container-home">
                     <div className="user-info-home">
                         <img className="profile-picture-home" />
@@ -84,25 +110,25 @@ class home extends Component {
                         <Link className="page-link" to="/about" >
                             <div className="menu-element">
                                 <h1 className="page-name">
-                                {this.state.aboutMe}
+                                    {this.state.aboutMe}
                                     {/* About Me */}
-                                    </h1>
+                                </h1>
                             </div>
                         </Link>
                         <Link className="page-link" to="/contact">
                             <div className="menu-element">
                                 <h1 className="page-name">
-                                {this.state.contact}
+                                    {this.state.contact}
                                     {/* Contact */}
-                                    </h1>
+                                </h1>
                             </div>
                         </Link>
                         <Link className="page-link" to="/projects">
                             <div className="menu-element">
                                 <h1 className="page-name">
-                                {this.state.projects}
+                                    {this.state.projects}
                                     {/* Projects */}
-                                    </h1>
+                                </h1>
                             </div>
                         </Link>
                     </div>
