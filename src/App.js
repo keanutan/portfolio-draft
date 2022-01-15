@@ -1,7 +1,9 @@
 // import logo from './logo.svg';
 // import { BrowserRouter as Router, Link, Switch } from 'react-router-dom';
-import Switch from 'react-router-dom/Switch';
-import Route from 'react-router-dom/Route';
+// import Switch from 'react-router-dom/Switch';
+import { Switch } from 'react-router-dom';
+import { Route } from 'react-router-dom';
+// import Route from 'react-router-dom/Route';
 import Home from "./home";
 import About from "./aboutme";
 import Contact from "./contactme";
