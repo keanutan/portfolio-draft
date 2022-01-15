@@ -9,6 +9,7 @@ export const TechnicalSkills = [
             <img alt="HTML" src="https://shields.io/badge/HTML5-333333?logo=html5&style=for-the-badge&logoColor=white"></img>,
             <img alt="Javascript" src="https://shields.io/badge/Javascript-333333?logo=javascript&style=for-the-badge&logoColor=white"></img>,
             <img alt="CSS" src="https://shields.io/badge/CSS3-333333?logo=css3&style=for-the-badge&logoColor=white"></img>,
+            <img alt="OCaml" src="https://shields.io/badge/OCAML-333333?logo=ocaml&style=for-the-badge&logoColor=white"></img>,
             <img alt="VHDL" src="https://shields.io/badge/VHDL-333333?&style=for-the-badge&logoColor=white"></img>,
             <img alt="Arm Assembly" src="https://shields.io/badge/ARM-333333?&style=for-the-badge&logoColor=white"></img>,
             <img alt="BASH" src="https://shields.io/badge/BASH-333333?logo=gnubash&style=for-the-badge&logoColor=white"></img>,

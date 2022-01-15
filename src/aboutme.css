@@ -421,3 +421,22 @@ strong {
     text-decoration: underline;
     color: grey;
 }
+
+.dropdown-resume {
+    display: none;
+}
+
+.dropdown-resume:hover {
+    display: block;
+}
+
+.resume-link:hover .dropdown-resume {
+    display: block;
+}
+
+.resume-link-option {
+    color: rgb(33, 33, 33);
+}
+.resume-link-option:hover {
+    color: white;
+}

@@ -2,7 +2,7 @@ import React from 'react';
 import { useState, Component } from 'react';
 import './contactme.css';
 // import pic from './pp.jpg'; // with import
-import profile from './Components/PersonalImages/profile.jpg'; // with import
+import profile from './Components/PersonalImages/profile_small.jpg'; // with import
 import Navbar from './Components/Navbar';
 import Footer from './Components/Footer';
 

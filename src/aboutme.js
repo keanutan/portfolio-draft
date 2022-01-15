@@ -3,10 +3,13 @@ import { useState, Component } from 'react';
 import { BrowserRouter as Router, Link } from 'react-router-dom';
 import './aboutme.css';
 // import pic from './pp.jpg'; // with import
-import profile from './Components/PersonalImages/profile.jpg'; // with import
-import { UniversityProjects } from './Components/ComponentData/UniversityProjects';
+// import profile from './Components/PersonalImages/profile.jpg'; // with import
+import profile from './Components/PersonalImages/profile_small.jpg'; // with import
+import { UniversityProjects, UniversityProjectsEnglish, UniversityProjectsFrancais } from './Components/ComponentData/UniversityProjects';
 import { TechnicalSkills } from './Components/ComponentData/TechnicalSkills';
 import resume from './Components/Resume/Natchev_Keanu_Resume.pdf';
+import resume_en from './Components/Resume/Natchev_Keanu_CV_english.pdf';
+import resume_fr from './Components/Resume/Natchev_Keanu_CV_francais.pdf';
 import Navbar from './Components/Navbar';
 import ScrollToTop from './Components/ScrollToTop';
 import Footer from './Components/Footer';
@@ -14,6 +17,24 @@ import Footer from './Components/Footer';
 
 
 class aboutme extends Component {
+
+    aboutme_en = {
+        pageTitle: 'About Me [ALMOST COMPLETE]',
+        TechnicalSkillsTitle: 'Technical Skills',
+        WorkExperienceTitle: 'Work Experience',
+        PersonalProjectsTitle: 'Personal Projects',
+        UniversityProjectsTitle: 'University Projects',
+        EducationTitle: 'Education',
+        Title: '',
+    };
+    aboutme_fr = {
+        pageTitle: 'À Propos [PRESQUE COMPLET]',
+        TechnicalSkillsTitle: 'Compétences Techniques',
+        WorkExperienceTitle: 'Expérience de Travail',
+        PersonalProjectsTitle: 'Projets Personnels',
+        UniversityProjectsTitle: 'Projets Universitaires',
+        EducationTitle: 'Éducation',
+    };
 
     state = {
         componentName: 'aboutme',
@@ -23,7 +44,13 @@ class aboutme extends Component {
         windowSize: window.innerWidth,
         pictureWidth: "80vw",
         // outOfRange: false,
-        p: window.pageYOffset
+        p: window.pageYOffset,
+        pageTitle: (localStorage.getItem('language') == 'English') ? (this.aboutme_en.pageTitle) : (this.aboutme_fr.pageTitle),
+        aboutMeData: (localStorage.getItem('language') == 'English') ? (this.aboutme_en) : (this.aboutme_fr),
+        // data: (localStorage.getItem('language') == 'English') ? (this.home_en.data) : (this.home_fr.data),
+        // aboutMe: (localStorage.getItem('language') == 'English') ? (this.home_en.aboutMe) : (this.home_fr.aboutMe),
+        // contact: (localStorage.getItem('language') == 'English') ? (this.home_en.contact) : (this.home_fr.contact),
+        // projects: (localStorage.getItem('language') == 'English') ? (this.home_en.projects) : (this.home_fr.projects),
     };
 
     // revealScroll = () => {
@@ -47,7 +74,8 @@ class aboutme extends Component {
     }
 
     render() {
-        document.title = "Keanu Natchev | About Me";
+        // document.title = "Keanu Natchev | About Me";
+        document.title = (localStorage.getItem('language') == 'English') ? ('Keanu Natchev | About Me') : ('Keanu Natchev | À Propos');
 
         // window.onscroll = () => {
         //     this.revealScroll();
@@ -56,7 +84,7 @@ class aboutme extends Component {
         return (
 
             <div className={(this.state.mounted) ? "wrapper-about-me" : "wrapper-black-about-me"} onLoad={this.wrapperTransition}>
-                <h3 className="about-me-title">About Me [ALMOST COMPLETE]</h3>
+                <h3 className="about-me-title">{this.state.pageTitle}</h3>
                 <ScrollToTop></ScrollToTop>
                 {/* <div className={(this.state.outOfRange) ? "scroll-to-top" : "scroll-to-top-hidden"} onClick={this.goToTop}>
                     <div className="arrow-left"></div>
@@ -88,11 +116,18 @@ class aboutme extends Component {
 
                             <p className="about-me-user-info-text-paragraph">
                                 Moreover, I am eager to start my professional software engineering carreer by doing an internship.
-                                
+
                                 For this purpose, you may contact me through the contact page of my portfolio by clicking the Contact Me button below.
                             </p>
                             <div className="resume-contact-button-section">
-                                <a className="resume-link" href={resume} target='_blank' rel='noopener noreferrer'>View Resume</a>
+                                <a className="resume-link">
+                                    View Resume
+                                    <div className='dropdown-resume'>
+                                        <a className='resume-link-option' href={resume_en} target='_blank' rel='noopener noreferrer'>English</a>
+                                        <br></br>
+                                        <a className='resume-link-option' href={resume_fr} target='_blank' rel='noopener noreferrer'>Français</a>
+                                    </div>
+                                </a>
                                 <Link className="contact-me-link" to="/contact">
                                     Contact Me
                                 </Link>
@@ -102,7 +137,7 @@ class aboutme extends Component {
                 </div>
                 <div className="about-user-info-resume">
                     <div className="technical-skills">
-                        <h3 className="technical-skills-title">Technical Skills</h3>
+                        <h3 className="technical-skills-title">{this.state.aboutMeData.TechnicalSkillsTitle}</h3>
                         <div className="technical-skills-content">
                             {TechnicalSkills.map((skill, index) => {
                                 return (
@@ -122,7 +157,7 @@ class aboutme extends Component {
                         </div>
                     </div>
                     <div className="work-experience">
-                        <h3 className="work-experience-title">Work Experience</h3>
+                        <h3 className="work-experience-title">{this.state.aboutMeData.WorkExperienceTitle}</h3>
                         <div className="work-experience-content">
                             <div className="work-experience-content-entry">
                                 <h4 className="work-experience-content-entry-title">Freelance Shopify Website Template Customization</h4>
@@ -134,7 +169,7 @@ class aboutme extends Component {
                         </div>
                     </div>
                     <div className="personal-projects">
-                        <h3 className="personal-projects-title">Personal Projects</h3>
+                        <h3 className="personal-projects-title">{this.state.aboutMeData.PersonalProjectsTitle}</h3>
                         <div className="personal-projects-content">
                             <div className="personal-projects-content-entry">
                                 <h4 className="personal-projects-content-entry-title">Binary Search Tree Visualizer</h4>
@@ -147,12 +182,12 @@ class aboutme extends Component {
                         </div>
                     </div>
                     <div className="university-projects">
-                        <h3 className="university-projects-title">University Projects</h3>
+                        <h3 className="university-projects-title">{this.state.aboutMeData.UniversityProjectsTitle}</h3>
 
 
                         <div className="university-projects-content">
 
-                            {UniversityProjects.map((project, index) => {
+                            {/* {UniversityProjects.map((project, index) => {
                                 return (
                                     <div className="university-projects-content-entry">
                                         <div className="university-projects-content-entry-title-date-section">
@@ -182,11 +217,42 @@ class aboutme extends Component {
                                         </div>
                                     </div>
                                 )
+                            })} */}
+                            {((localStorage.getItem('language') == 'English') ? (UniversityProjectsEnglish) : (UniversityProjectsFrancais)).map((project, index) => {
+                                return (
+                                    <div className="university-projects-content-entry">
+                                        <div className="university-projects-content-entry-title-date-section">
+                                            <h4 className="university-projects-content-entry-title">{project.title}</h4>
+                                            <h4 className="university-projects-content-entry-date">{project.date}</h4>
+                                        </div>
+                                        <h5 className="university-projects-content-entry-class-title"><i>{project.class}</i></h5>
+                                        <ul className="university-projects-content-entry-list">
+                                            {project.description.map((bullet) => {
+                                                return (
+                                                    <div>
+                                                        {bullet}
+                                                    </div>
+                                                )
+                                            })}
+                                        </ul>
+                                        <br></br>
+                                        <div className="university-projects-content-entry-tools-title">Tools Utilized:</div>
+                                        <div className="university-projects-content-entry-tools">
+                                            {project.tools.map((tool) => {
+                                                return (
+                                                    <div>
+                                                        {tool}
+                                                    </div>
+                                                )
+                                            })}
+                                        </div>
+                                    </div>
+                                )
                             })}
                         </div>
                     </div>
                     <div className="education">
-                        <h3 className="education-title">Education</h3>
+                        <h3 className="education-title">{this.state.aboutMeData.EducationTitle}</h3>
                         <div className="education-content">
                             <div className="education-content-entry">
                                 <div className="education-content-entry-title-date-section">
