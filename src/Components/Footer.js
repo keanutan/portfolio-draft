@@ -21,8 +21,8 @@ export default class Footer extends Component {
 
 
     state = {
-        language: 'Français',
-        // language: 'English',
+        // language: 'Français',
+        language: 'English',
         // language: '',
 
     };
