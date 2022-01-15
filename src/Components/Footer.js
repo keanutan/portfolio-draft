@@ -40,7 +40,7 @@ export default class Footer extends Component {
                 console.log('A');
                 break;
         }
-        window.location.reload();
+        // window.location.reload();
     };
 
     render() {
