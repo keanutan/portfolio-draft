@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.899c4b11.chunk.css",
+    "main.css": "/static/css/main.e1d989f9.chunk.css",
     "main.js": "/static/js/main.ad7a19c6.chunk.js",
     "main.js.map": "/static/js/main.ad7a19c6.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.771d0fc5.js",
@@ -10,7 +10,7 @@
     "static/js/3.01492987.chunk.js": "/static/js/3.01492987.chunk.js",
     "static/js/3.01492987.chunk.js.map": "/static/js/3.01492987.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.899c4b11.chunk.css.map": "/static/css/main.899c4b11.chunk.css.map",
+    "static/css/main.e1d989f9.chunk.css.map": "/static/css/main.e1d989f9.chunk.css.map",
     "static/js/2.4e23687d.chunk.js.LICENSE.txt": "/static/js/2.4e23687d.chunk.js.LICENSE.txt",
     "static/media/Binary_Search_Tree_Visualizer_Icon.6e5719b6.svg": "/static/media/Binary_Search_Tree_Visualizer_Icon.6e5719b6.svg",
     "static/media/Fast_Fourier_Transform_Image_Processor_Icon.da17beaa.svg": "/static/media/Fast_Fourier_Transform_Image_Processor_Icon.da17beaa.svg",
@@ -42,7 +42,7 @@
   "entrypoints": [
     "static/js/runtime-main.771d0fc5.js",
     "static/js/2.4e23687d.chunk.js",
-    "static/css/main.899c4b11.chunk.css",
+    "static/css/main.e1d989f9.chunk.css",
     "static/js/main.ad7a19c6.chunk.js"
   ]
 }
