@@ -1,13 +1,13 @@
 export const TechnicalSkills = [
     {
-        skillTitle: 'Programming Languages',
+        skillTitle: (localStorage.getItem('language') == 'English' || localStorage.getItem('language') != 'Français') ? ('Programming Languages') : ('Languages de Programmation'),
         skillElements: [
             <img alt="Java" src="https://shields.io/badge/JAVA-333333?logo=java&style=for-the-badge&logoColor=white"></img>,
             <img alt="C" src="https://shields.io/badge/c-333333?logo=c&style=for-the-badge&logoColor=white"></img>,
             <img alt="Python" src="https://shields.io/badge/Python-333333?logo=python&style=for-the-badge&logoColor=white"></img>,
             <img alt="CUDA" src="https://shields.io/badge/CUDA-333333?logo=nvidia&style=for-the-badge&logoColor=white"></img>,
             <img alt="HTML" src="https://shields.io/badge/HTML5-333333?logo=html5&style=for-the-badge&logoColor=white"></img>,
-            <img alt="Javascript" src="https://shields.io/badge/Javascript-333333?logo=javascript&style=for-the-badge&logoColor=white"></img>,
+            <img alt="JavaScript" src="https://shields.io/badge/Javascript-333333?logo=javascript&style=for-the-badge&logoColor=white"></img>,
             <img alt="CSS" src="https://shields.io/badge/CSS3-333333?logo=css3&style=for-the-badge&logoColor=white"></img>,
             <img alt="OCaml" src="https://shields.io/badge/OCAML-333333?logo=ocaml&style=for-the-badge&logoColor=white"></img>,
             <img alt="VHDL" src="https://shields.io/badge/VHDL-333333?&style=for-the-badge&logoColor=white"></img>,
@@ -16,7 +16,7 @@ export const TechnicalSkills = [
         ]
     },
     {
-        skillTitle: 'Tools',
+        skillTitle: (localStorage.getItem('language') == 'English' || localStorage.getItem('language') != 'Français') ? ('Tools') : ('Outils'),
         skillElements: [
             <img alt="Git" src="https://shields.io/badge/Git-333333?logo=git&style=for-the-badge&logoColor=white"></img>,
             <img alt="Cucumber.js" src="https://shields.io/badge/cucumber.js-333333?logo=cucumber&style=for-the-badge&logoColor=white"></img>,
@@ -35,7 +35,7 @@ export const TechnicalSkills = [
         ]
     },
     {
-        skillTitle: 'Development Environments',
+        skillTitle: (localStorage.getItem('language') == 'English' || localStorage.getItem('language') != 'Français') ? ('Development Environments') : ('Environnements de Dévelopement'),
         skillElements: [
             <img alt="Visual Studio Code" src="https://shields.io/badge/Visual%20Studio%20Code-333333?logo=visualstudiocode&style=for-the-badge&logoColor=white"></img>,
             <img alt="Eclipse" src="https://shields.io/badge/Eclipse-333333?logo=eclipseide&style=for-the-badge&logoColor=white"></img>,
@@ -43,7 +43,7 @@ export const TechnicalSkills = [
         ]
     },
     {
-        skillTitle: 'Operating Systems',
+        skillTitle: (localStorage.getItem('language') == 'English' || localStorage.getItem('language') != 'Français') ? ('Operating Systems') : ('Systèmes Opérateurs'),
         skillElements: [
             <img alt="Windows" src="https://shields.io/badge/Windows-333333?logo=windows&style=for-the-badge&logoColor=white"></img>,
             <img alt="Linux" src="https://shields.io/badge/Linux-333333?logo=linux&style=for-the-badge&logoColor=white"></img>,
@@ -51,7 +51,7 @@ export const TechnicalSkills = [
         ]
     },
     {
-        skillTitle: 'Other',
+        skillTitle: (localStorage.getItem('language') == 'English' || localStorage.getItem('language') != 'Français') ? ('Other') : ('Autres'),
         skillElements: [
             <img alt="Figma" src="https://shields.io/badge/Figma-333333?logo=figma&style=for-the-badge&logoColor=white"></img>,
             <img alt="Adobe Photoshop" src="https://shields.io/badge/Adobe%20Photoshop-333333?logo=adobephotoshop&style=for-the-badge&logoColor=white"></img>,

@@ -26,11 +26,12 @@ class contactme extends Component {
 
 
     render() {
-        document.title = "Keanu Natchev | Contact Me";
+        document.title = (localStorage.getItem('language') == 'English' || localStorage.getItem('language') != 'Français') ? ('Keanu Natchev | Contact Me') : ('Keanu Natchev | Contactez-Moi');
+        
         return (
 
             <div className={(this.state.mountedContact) ? "wrapper-contact-me" : "wrapper-black-contact-me"} onLoad={this.wrapperTransition}>
-                <h3 className="contact-me-title">Contact Me [UNDER CONSTRUCTION]</h3>
+                <h3 className="contact-me-title">{(localStorage.getItem('language') == 'English' || localStorage.getItem('language') != 'Français') ? ('Contact Me [UNDER CONSTRUCTION] Send an email to keanu.natchev@gmail.com') : ('Contactez-Moi [EN PROGRÈS] Envoyer un email à keanu.natchev@gmail.com')}</h3>
                 <Navbar pageName={this.state.componentName}></Navbar>
                 <div className="contact-form-wrapper">
                     <div className="contact-me-user-info-picture">

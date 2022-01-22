@@ -3,9 +3,9 @@ import { useState, Component } from 'react';
 import { BrowserRouter as Router, Link } from 'react-router-dom';
 import './aboutme.css';
 import profile from './Components/PersonalImages/profile_small.jpg'; // with import
-import { UniversityProjects, UniversityProjectsEnglish, UniversityProjectsFrancais } from './Components/ComponentData/UniversityProjects';
 import { TechnicalSkills } from './Components/ComponentData/TechnicalSkills';
-import resume from './Components/Resume/Natchev_Keanu_Resume.pdf';
+import { UniversityProjectsEnglish, UniversityProjectsFrancais } from './Components/ComponentData/UniversityProjects';
+import { PersonalProjectsEnglish, PersonalProjectsFrancais } from './Components/ComponentData/PersonalProjects';
 import resume_en from './Components/Resume/Natchev_Keanu_CV_english.pdf';
 import resume_fr from './Components/Resume/Natchev_Keanu_CV_francais.pdf';
 import Navbar from './Components/Navbar';
@@ -94,38 +94,37 @@ class aboutme extends Component {
                     <div className="about-user-info-text-container">
                         <div className="about-user-info-text">
                             <p className="about-me-user-info-text-paragraph">
-                                Hello there,
+                                {(localStorage.getItem('language') == 'English' || localStorage.getItem('language') != 'Français') ? ('Hello there,') : ('Salut,')}
                             </p>
                             <p className="about-me-user-info-text-paragraph">
-                                I'm Keanu Natchev
+                                {(localStorage.getItem('language') == 'English' || localStorage.getItem('language') != 'Français') ? ('I am Keanu Natchev') : ('Je suis Keanu Natchev')}
                             </p>
                             <p className="about-me-user-info-text-paragraph">
-                                Software Engineering Student at McGill University completing my third year.
+                                {(localStorage.getItem('language') == 'English' || localStorage.getItem('language') != 'Français') ? ('Software Engineering Student at McGill University in my last year.') : ('Étudiant en Génie en Logiciel à l\'Université de McGill dans ma dernière année.')}
                             </p>
                             <p className="about-me-user-info-text-paragraph">
-                                I am very passionate about software development and design which you can check out by looking at the&nbsp;
+                                {(localStorage.getItem('language') == 'English' || localStorage.getItem('language') != 'Français') ? ('I am very passionate about software development and design which you can check out by looking at the ') : ('Je suis très passionné par le développement et design de logiciel que vous pouvez voir en visitant la page ')}
                                 <Link className="about-me-user-info-text-paragraph-link" to="/projects">
-                                    projects
+                                    {(localStorage.getItem('language') == 'English' || localStorage.getItem('language') != 'Français') ? ('projects') : ('projets')}
                                 </Link>
-                                &nbsp;section of my portfolio as well as taking a look at my Resume found below.
+                                {(localStorage.getItem('language') == 'English' || localStorage.getItem('language') != 'Français') ? (' section of my portfolio as well as taking a look at my resume found below.') : (' de mon portfolio ou même en lançant un coup d\'oeuil sur mon CV qui peut être trouvé ci-dessous.')}
                             </p>
 
                             <p className="about-me-user-info-text-paragraph">
-                                Moreover, I am eager to start my professional software engineering carreer by doing an internship.
-
-                                For this purpose, you may contact me through the contact page of my portfolio by clicking the Contact Me button below.
+                                {(localStorage.getItem('language') == 'English' || localStorage.getItem('language') != 'Français') ? ('Moreover, I am eager to start my professional software engineering carreer by doing an internship. For this purpose, you may contact me through the contact page of my portfolio by clicking the button below (in development).') : ('De plus, je suis exité d\'entamer ma carrière professionnelle en génie en logiciel en faisant un stage. Pour ce fait, vous pouvez me contactez à travers la page de contact de mon portfolio en cliquant le bouton ci-dessous (en développement).')}
                             </p>
                             <div className="resume-contact-button-section">
                                 <a className="resume-link">
-                                    View Resume
+                                    {/* View Resume */}
+                                    {(localStorage.getItem('language') == 'English' || localStorage.getItem('language') != 'Français') ? ('View Resume') : ('Télécharger CV')}
                                     <div className='dropdown-resume'>
                                         <a className='resume-link-option' href={resume_en} target='_blank' rel='noopener noreferrer'>English</a>
-                                        <br></br>
                                         <a className='resume-link-option' href={resume_fr} target='_blank' rel='noopener noreferrer'>Français</a>
                                     </div>
                                 </a>
                                 <Link className="contact-me-link" to="/contact">
-                                    Contact Me
+                                    {(localStorage.getItem('language') == 'English' || localStorage.getItem('language') != 'Français') ? ('Contact Me') : ('Contactez-Moi')}
+                                    {/* Contact Me */}
                                 </Link>
                             </div>
                         </div>
@@ -167,32 +166,15 @@ class aboutme extends Component {
                     <div className="personal-projects">
                         <h3 className="personal-projects-title">{this.state.aboutMeData.PersonalProjectsTitle}</h3>
                         <div className="personal-projects-content">
-                            <div className="personal-projects-content-entry">
-                                <h4 className="personal-projects-content-entry-title">Binary Search Tree Visualizer</h4>
-                                <h4 className="personal-projects-content-entry-date">December 2020</h4>
-                                <ul className="personal-projects-content-entry-list">
-                                    <li className="personal-projects-content-entry-list-element">Built a Binary Search Tree Visualizer <strong>Java Applet</strong> using <strong>VSCode</strong>.</li>
-                                    <li className="personal-projects-content-entry-list-element" >Implemented features such as adding/removing nodes, generating random trees, and traversal animations.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="university-projects">
-                        <h3 className="university-projects-title">{this.state.aboutMeData.UniversityProjectsTitle}</h3>
-
-
-                        <div className="university-projects-content">
-
-                            {/* {UniversityProjects.map((project, index) => {
+                            {((localStorage.getItem('language') == 'English' || localStorage.getItem('language') != 'Français') ? (PersonalProjectsEnglish) : (PersonalProjectsFrancais)).map((project) => {
                                 return (
-                                    <div className="university-projects-content-entry">
-                                        <div className="university-projects-content-entry-title-date-section">
-                                            <h4 className="university-projects-content-entry-title">{project.title}</h4>
-                                            <h4 className="university-projects-content-entry-date">{project.date}</h4>
+                                    <div className="personal-projects-content-entry">
+                                        <div className="personal-projects-content-entry-title-date-section">
+                                            <h4 className="personal-projects-content-entry-title">{project.title}{project.githubLink})</h4>
+                                            <h4 className="personal-projects-content-entry-date">{project.date}</h4>
                                         </div>
-                                        <h5 className="university-projects-content-entry-class-title"><i>{project.class}</i></h5>
-                                        <ul className="university-projects-content-entry-list">
-                                            {project.description.map((bullet, number) => {
+                                        <ul className="personal-projects-content-entry-list">
+                                            {project.description.map((bullet) => {
                                                 return (
                                                     <div>
                                                         {bullet}
@@ -201,9 +183,9 @@ class aboutme extends Component {
                                             })}
                                         </ul>
                                         <br></br>
-                                        <div className="university-projects-content-entry-tools-title">Tools Utilized:</div>
-                                        <div className="university-projects-content-entry-tools">
-                                            {project.tools.map((tool, ppppppp) => {
+                                        <div className="personal-projects-content-entry-tools-title">{(localStorage.getItem('language') == 'English' || localStorage.getItem('language') != 'Français') ? ('Tools Utilized:') : ('Outils Utilisés:')}</div>
+                                        <div className="personal-projects-content-entry-tools">
+                                            {project.tools.map((tool) => {
                                                 return (
                                                     <div>
                                                         {tool}
@@ -213,7 +195,14 @@ class aboutme extends Component {
                                         </div>
                                     </div>
                                 )
-                            })} */}
+                            })}
+                        </div>
+                    </div>
+                    <div className="university-projects">
+                        <h3 className="university-projects-title">{this.state.aboutMeData.UniversityProjectsTitle}</h3>
+
+
+                        <div className="university-projects-content">
                             {((localStorage.getItem('language') == 'English' || localStorage.getItem('language') != 'Français') ? (UniversityProjectsEnglish) : (UniversityProjectsFrancais)).map((project, index) => {
                                 return (
                                     <div className="university-projects-content-entry">
@@ -232,7 +221,7 @@ class aboutme extends Component {
                                             })}
                                         </ul>
                                         <br></br>
-                                        <div className="university-projects-content-entry-tools-title">Tools Utilized:</div>
+                                        <div className="university-projects-content-entry-tools-title">{(localStorage.getItem('language') == 'English' || localStorage.getItem('language') != 'Français') ? ('Tools Utilized:') : ('Outils Utilisés:')}</div>
                                         <div className="university-projects-content-entry-tools">
                                             {project.tools.map((tool) => {
                                                 return (

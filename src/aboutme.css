@@ -283,6 +283,7 @@ a {
     font-size: 14px;
     font-weight: 600;
     color: rgb(163, 163, 163);
+    text-align: center;
 }
 
 .work-experience, .personal-projects, .university-projects, .education {
@@ -314,11 +315,15 @@ a {
     border-top: 3px solid rgb(85, 85, 85);
 }
 
-.work-experience-content-entry-title, .personal-projects-content-entry-title, .university-projects-content-entry-title, .university-projects-content-entry-class-title, .education-content-entry-title {
+.work-experience-content-entry-title, .personal-projects-content-entry-title, .university-projects-content-entry-title, .personal-projects-content-entry-github-link, .university-projects-content-entry-class-title, .education-content-entry-title {
     margin-bottom: 10px;
     width: fit-content;
     display: inline-block;
     color: rgb(170, 170, 170);
+}
+
+.personal-projects-content-entry-github-link:hover {
+    color: white;
 }
 
 .university-projects-content-entry-class-title, .education-content-entry-class-title {
@@ -349,7 +354,7 @@ a {
     padding-bottom: 5px;
 }
 
-.university-projects-content-entry-tools {
+.university-projects-content-entry-tools, .personal-projects-content-entry-tools {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -358,11 +363,11 @@ a {
     margin-right: 10px;
 }
 
-.university-projects-content-entry-tools-image {
-    height: 4vh;
+.university-projects-content-entry-tools-image, .personal-projects-content-entry-tools-image {
+    height: 3vh;
 }
 
-.university-projects-content-entry-tools-title {
+.university-projects-content-entry-tools-title, .personal-projects-content-entry-tools-title {
     float: left;
     margin-left: 20px;
     margin-right: 10px;
@@ -371,6 +376,7 @@ a {
     color: grey;
     padding-bottom: 5px;
 }
+
 
 strong {
     color: rgb(202, 202, 202);
@@ -436,6 +442,8 @@ strong {
 
 .resume-link-option {
     color: rgb(33, 33, 33);
+    display: block;
+    text-align: center;
 }
 .resume-link-option:hover {
     color: white;

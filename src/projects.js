@@ -358,13 +358,14 @@ class projects extends Component {
 
 
     render() {
-        document.title = "Keanu Natchev | Projects";
+        document.title = (localStorage.getItem('language') == 'English' || localStorage.getItem('language') != 'Français') ? ('Keanu Natchev | Projects') : ('Keanu Natchev | Projets');
+
         // console.log(this.FindParentFolder('Projects', FileSystem.Subfolders));
 
         return (
 
             <div className={(this.state.mountedProjects) ? "wrapper-projects" : "wrapper-black-projects"} onLoad={this.wrapperTransitionProjects}>
-                <h3 className="projects-title">Projects [UNDER CONSTRUCTION]</h3>
+                <h3 className="projects-title">{(localStorage.getItem('language') == 'English' || localStorage.getItem('language') != 'Français') ? ('Projects [UNDER CONSTRUCTION]') : ('Projects [EN PROGRÈS]')}</h3>
                 <Navbar pageName={this.state.componentName}></Navbar>
                 <div className="projects-window-wrapper">
                     <div className="projects-window-top-bar">
