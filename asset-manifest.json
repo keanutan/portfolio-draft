@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.e1d989f9.chunk.css",
-    "main.js": "/static/js/main.b0d12db1.chunk.js",
-    "main.js.map": "/static/js/main.b0d12db1.chunk.js.map",
+    "main.css": "/static/css/main.121c1c52.chunk.css",
+    "main.js": "/static/js/main.056da26c.chunk.js",
+    "main.js.map": "/static/js/main.056da26c.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.b6969f6c.js",
     "runtime-main.js.map": "/static/js/runtime-main.b6969f6c.js.map",
     "static/js/2.8e836782.chunk.js": "/static/js/2.8e836782.chunk.js",
@@ -10,39 +10,27 @@
     "static/js/3.7d61bf63.chunk.js": "/static/js/3.7d61bf63.chunk.js",
     "static/js/3.7d61bf63.chunk.js.map": "/static/js/3.7d61bf63.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.e1d989f9.chunk.css.map": "/static/css/main.e1d989f9.chunk.css.map",
+    "static/css/main.121c1c52.chunk.css.map": "/static/css/main.121c1c52.chunk.css.map",
     "static/js/2.8e836782.chunk.js.LICENSE.txt": "/static/js/2.8e836782.chunk.js.LICENSE.txt",
     "static/media/Binary_Search_Tree_Visualizer_Icon.6e5719b6.svg": "/static/media/Binary_Search_Tree_Visualizer_Icon.6e5719b6.svg",
     "static/media/Fast_Fourier_Transform_Image_Processor_Icon.da17beaa.svg": "/static/media/Fast_Fourier_Transform_Image_Processor_Icon.da17beaa.svg",
     "static/media/Natchev_Keanu_CV_english.ea2a3755.pdf": "/static/media/Natchev_Keanu_CV_english.ea2a3755.pdf",
     "static/media/Natchev_Keanu_CV_francais.e3a37123.pdf": "/static/media/Natchev_Keanu_CV_francais.e3a37123.pdf",
-    "static/media/Natchev_Keanu_Resume.b06205dc.pdf": "/static/media/Natchev_Keanu_Resume.b06205dc.pdf",
-    "static/media/anime.bcb1b2a9.svg": "/static/media/anime.bcb1b2a9.svg",
     "static/media/back.441d8498.svg": "/static/media/back.441d8498.svg",
     "static/media/close.6953d0db.svg": "/static/media/close.6953d0db.svg",
     "static/media/folder.181d5c50.svg": "/static/media/folder.181d5c50.svg",
     "static/media/forward.dc9f2143.svg": "/static/media/forward.dc9f2143.svg",
-    "static/media/gherkin.38ba87bd.svg": "/static/media/gherkin.38ba87bd.svg",
     "static/media/github.c4216320.svg": "/static/media/github.c4216320.svg",
-    "static/media/gradle.fb15e4fb.svg": "/static/media/gradle.fb15e4fb.svg",
     "static/media/harddriveicon.ef10f10b.svg": "/static/media/harddriveicon.ef10f10b.svg",
-    "static/media/heroku.1c4eb738.svg": "/static/media/heroku.1c4eb738.svg",
-    "static/media/leocad.41db40e6.svg": "/static/media/leocad.41db40e6.svg",
     "static/media/linkedin.894e183c.svg": "/static/media/linkedin.894e183c.svg",
     "static/media/minimize.929b2f97.svg": "/static/media/minimize.929b2f97.svg",
     "static/media/profile_small.065ee519.jpg": "/static/media/profile_small.065ee519.jpg",
-    "static/media/react.fffdf700.svg": "/static/media/react.fffdf700.svg",
-    "static/media/springboot.5b10349a.svg": "/static/media/springboot.5b10349a.svg",
-    "static/media/tab.d3cd6aa9.svg": "/static/media/tab.d3cd6aa9.svg",
-    "static/media/travisci.3ca18a2f.svg": "/static/media/travisci.3ca18a2f.svg",
-    "static/media/umple.ddc10480.svg": "/static/media/umple.ddc10480.svg",
-    "static/media/vue.77e8aef6.svg": "/static/media/vue.77e8aef6.svg",
-    "static/media/webots.c9b1187f.png": "/static/media/webots.c9b1187f.png"
+    "static/media/tab.d3cd6aa9.svg": "/static/media/tab.d3cd6aa9.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.b6969f6c.js",
     "static/js/2.8e836782.chunk.js",
-    "static/css/main.e1d989f9.chunk.css",
-    "static/js/main.b0d12db1.chunk.js"
+    "static/css/main.121c1c52.chunk.css",
+    "static/js/main.056da26c.chunk.js"
   ]
 }
