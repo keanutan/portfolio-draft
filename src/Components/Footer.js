@@ -53,7 +53,7 @@ export default class Footer extends Component {
                         <img className="social-media-links-languages-images" src={linkedin} />
                     </a>
                 </div>
-                <footer className="copyright-footer"> <small> Copyright © 2021 - 2022 Keanu Natchev</small> </footer>
+                <footer className="copyright-footer"> <small> Copyright © 2021 - 2025 Keanu Natchev</small> </footer>
                 <div className="social-media-links-languages" onClick={this.handleLanguageSelect}>
                     {(this.state.language == 'English') ? ('Français') : ('English')}
                 </div>

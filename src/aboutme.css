@@ -304,15 +304,14 @@ a {
 
 .technical-skills-content, .work-experience-content-entry, .personal-projects-content-entry, .university-projects-content-entry {
     width: 80%;
-    border-top: 1px solid rgb(85, 85, 85);
 }
 
 .education-content-entry {
     width: 80%;
 }
 
-.university-projects-content-entry:first-child, .education-content-entry:first-child {
-    border-top: 3px solid rgb(85, 85, 85);
+.technical-skills-content, .work-experience-content-entry:first-child, .personal-projects-content-entry:first-child, .university-projects-content-entry:first-child, .education-content-entry:first-child {
+    border-top: 2px solid rgb(85, 85, 85);
 }
 
 .work-experience-content-entry-title, .personal-projects-content-entry-title, .university-projects-content-entry-title, .personal-projects-content-entry-github-link, .university-projects-content-entry-class-title, .education-content-entry-title {

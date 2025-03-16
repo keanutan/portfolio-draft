@@ -12,7 +12,7 @@ export const PersonalProjectsEnglish = [
             <img className="personal-projects-content-entry-tools-image" alt="HTML" src="https://shields.io/badge/HTML5-333333?logo=html5&style=for-the-badge&logoColor=white"></img>,
             <img className="personal-projects-content-entry-tools-image" alt="CSS" src="https://shields.io/badge/CSS3-333333?logo=css3&style=for-the-badge&logoColor=white"></img>,
             <img className="personal-projects-content-entry-tools-image" alt="Figma" src="https://shields.io/badge/Figma-333333?logo=figma&style=for-the-badge&logoColor=white"></img>,
-            <img className="personal-projects-content-entry-tools-image" alt="Visual Studio Code" src="https://shields.io/badge/Visual%20Studio%20Code-333333?logo=visualstudiocode&style=for-the-badge&logoColor=white"></img>
+            <img className="personal-projects-content-entry-tools-image" alt="VS Code" src="https://shields.io/badge/Visual%20Studio%20Code-333333?logo=visualstudiocode&style=for-the-badge&logoColor=white"></img>
         ]
     },
     {
@@ -24,7 +24,7 @@ export const PersonalProjectsEnglish = [
         ],
         tools: [
             <img className="personal-projects-content-entry-tools-image" alt="Java" src="https://shields.io/badge/JAVA-333333?logo=java&style=for-the-badge&logoColor=white"></img>,
-            <img className="personal-projects-content-entry-tools-image" alt="Visual Studio Code" src="https://shields.io/badge/Visual%20Studio%20Code-333333?logo=visualstudiocode&style=for-the-badge&logoColor=white"></img>
+            <img className="personal-projects-content-entry-tools-image" alt="VS Code" src="https://shields.io/badge/Visual%20Studio%20Code-333333?logo=visualstudiocode&style=for-the-badge&logoColor=white"></img>
         ]
     },
 ]
@@ -42,7 +42,7 @@ export const PersonalProjectsFrancais = [
             <img className="personal-projects-content-entry-tools-image" alt="HTML" src="https://shields.io/badge/HTML5-333333?logo=html5&style=for-the-badge&logoColor=white"></img>,
             <img className="personal-projects-content-entry-tools-image" alt="CSS" src="https://shields.io/badge/CSS3-333333?logo=css3&style=for-the-badge&logoColor=white"></img>,
             <img className="personal-projects-content-entry-tools-image" alt="Figma" src="https://shields.io/badge/Figma-333333?logo=figma&style=for-the-badge&logoColor=white"></img>,
-            <img className="personal-projects-content-entry-tools-image" alt="Visual Studio Code" src="https://shields.io/badge/Visual%20Studio%20Code-333333?logo=visualstudiocode&style=for-the-badge&logoColor=white"></img>
+            <img className="personal-projects-content-entry-tools-image" alt="VS Code" src="https://shields.io/badge/Visual%20Studio%20Code-333333?logo=visualstudiocode&style=for-the-badge&logoColor=white"></img>
         ]
     },
     {
@@ -54,7 +54,7 @@ export const PersonalProjectsFrancais = [
         ],
         tools: [
             <img className="personal-projects-content-entry-tools-image" alt="Java" src="https://shields.io/badge/JAVA-333333?logo=java&style=for-the-badge&logoColor=white"></img>,
-            <img className="personal-projects-content-entry-tools-image" alt="Visual Studio Code" src="https://shields.io/badge/Visual%20Studio%20Code-333333?logo=visualstudiocode&style=for-the-badge&logoColor=white"></img>
+            <img className="personal-projects-content-entry-tools-image" alt="VS Code" src="https://shields.io/badge/Visual%20Studio%20Code-333333?logo=visualstudiocode&style=for-the-badge&logoColor=white"></img>
         ]
     },
 ]

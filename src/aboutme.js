@@ -16,7 +16,7 @@ import Footer from './Components/Footer';
 class aboutme extends Component {
 
     aboutme_en = {
-        pageTitle: 'About Me [ALMOST COMPLETE]',
+        pageTitle: 'About Me',
         TechnicalSkillsTitle: 'Technical Skills',
         WorkExperienceTitle: 'Work Experience',
         PersonalProjectsTitle: 'Personal Projects',
@@ -25,7 +25,7 @@ class aboutme extends Component {
         Title: '',
     };
     aboutme_fr = {
-        pageTitle: 'À Propos [PRESQUE COMPLET]',
+        pageTitle: 'À Propos',
         TechnicalSkillsTitle: 'Compétences Techniques',
         WorkExperienceTitle: 'Expérience de Travail',
         PersonalProjectsTitle: 'Projets Personnels',
@@ -155,10 +155,17 @@ class aboutme extends Component {
                         <h3 className="work-experience-title">{this.state.aboutMeData.WorkExperienceTitle}</h3>
                         <div className="work-experience-content">
                             <div className="work-experience-content-entry">
-                                <h4 className="work-experience-content-entry-title">Freelance Shopify Website Template Customization</h4>
-                                <h4 className="work-experience-content-entry-date">March 2021</h4>
+                                <h4 className="work-experience-content-entry-title">Amazon Software Development Engineer</h4>
+                                <h4 className="work-experience-content-entry-date">January 2023 - Now</h4>
                                 <ul className="work-experience-content-entry-list">
-                                    <li className="work-experience-content-entry-list-element">Worked with owner of <strong>cimerestudio.com</strong> to customize website by working on <strong>CSS</strong> and <strong>Liquid</strong> files.</li>
+                                    {/* <li className="work-experience-content-entry-list-element">Worked with owner of <strong>cimerestudio.com</strong> to customize website by working on <strong>CSS</strong> and <strong>Liquid</strong> files.</li> */}
+                                </ul>
+                            </div>
+                            <div className="work-experience-content-entry">
+                                <h4 className="work-experience-content-entry-title">Amazon Software Development Engineer Intern</h4>
+                                <h4 className="work-experience-content-entry-date">July - August 2022</h4>
+                                <ul className="work-experience-content-entry-list">
+                                    {/* <li className="work-experience-content-entry-list-element">Worked with owner of <strong>cimerestudio.com</strong> to customize website by working on <strong>CSS</strong> and <strong>Liquid</strong> files.</li> */}
                                 </ul>
                             </div>
                         </div>
@@ -183,7 +190,7 @@ class aboutme extends Component {
                                             })}
                                         </ul>
                                         <br></br>
-                                        <div className="personal-projects-content-entry-tools-title">{(localStorage.getItem('language') == 'English' || localStorage.getItem('language') != 'Français') ? ('Tools Utilized:') : ('Outils Utilisés:')}</div>
+                                        <div className="personal-projects-content-entry-tools-title">{(localStorage.getItem('language') == 'English' || localStorage.getItem('language') != 'Français') ? ('Tools:') : ('Outils:')}</div>
                                         <div className="personal-projects-content-entry-tools">
                                             {project.tools.map((tool) => {
                                                 return (
@@ -221,7 +228,7 @@ class aboutme extends Component {
                                             })}
                                         </ul>
                                         <br></br>
-                                        <div className="university-projects-content-entry-tools-title">{(localStorage.getItem('language') == 'English' || localStorage.getItem('language') != 'Français') ? ('Tools Utilized:') : ('Outils Utilisés:')}</div>
+                                        <div className="university-projects-content-entry-tools-title">{(localStorage.getItem('language') == 'English' || localStorage.getItem('language') != 'Français') ? ('Tools:') : ('Outils:')}</div>
                                         <div className="university-projects-content-entry-tools">
                                             {project.tools.map((tool) => {
                                                 return (
@@ -242,7 +249,7 @@ class aboutme extends Component {
                             <div className="education-content-entry">
                                 <div className="education-content-entry-title-date-section">
                                     <h4 className="education-content-entry-title">Bachelor of Software Engineering</h4>
-                                    <h4 className="education-content-entry-date">September 2017 - Present</h4>
+                                    <h4 className="education-content-entry-date">December 2022</h4>
                                 </div>
                                 <h5 className="education-content-entry-class-title"><i>McGill University, Montreal, QC</i></h5>
                             </div>
