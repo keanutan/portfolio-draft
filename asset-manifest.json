@@ -1,11 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.3709e4c4.css",
-    "main.js": "/static/js/main.e4484884.js",
+    "main.css": "/static/css/main.c6d1424b.css",
+    "main.js": "/static/js/main.fe1daa6d.js",
     "static/js/453.0bd9b5fd.chunk.js": "/static/js/453.0bd9b5fd.chunk.js",
     "static/media/profile_small.jpg": "/static/media/profile_small.065ee51966dc765d23c7.jpg",
-    "static/media/Natchev_Keanu_CV_francais.pdf": "/static/media/Natchev_Keanu_CV_francais.e3a371234a5c34e45888.pdf",
-    "static/media/Natchev_Keanu_CV_english.pdf": "/static/media/Natchev_Keanu_CV_english.ea2a37550bb2501bbde8.pdf",
+    "static/media/Natchev_Keanu_CV_en.pdf": "/static/media/Natchev_Keanu_CV_en.c6b035ca9c32e8d82b7b.pdf",
     "static/media/Binary_Search_Tree_Visualizer_Icon.svg": "/static/media/Binary_Search_Tree_Visualizer_Icon.9273835744431fc7e2bee00deab87461.svg",
     "index.html": "/index.html",
     "static/media/github.svg": "/static/media/github.a2c54977812c23688040273baea693fa.svg",
@@ -18,12 +17,12 @@
     "static/media/close.svg": "/static/media/close.7a092bcd09000c4284b380c8a2e86b9a.svg",
     "static/media/tab.svg": "/static/media/tab.86b39299bfccd674d7fd5db8036f2d66.svg",
     "static/media/minimize.svg": "/static/media/minimize.1524cbbe39250093b8145eff617b8e57.svg",
-    "main.3709e4c4.css.map": "/static/css/main.3709e4c4.css.map",
-    "main.e4484884.js.map": "/static/js/main.e4484884.js.map",
+    "main.c6d1424b.css.map": "/static/css/main.c6d1424b.css.map",
+    "main.fe1daa6d.js.map": "/static/js/main.fe1daa6d.js.map",
     "453.0bd9b5fd.chunk.js.map": "/static/js/453.0bd9b5fd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3709e4c4.css",
-    "static/js/main.e4484884.js"
+    "static/css/main.c6d1424b.css",
+    "static/js/main.fe1daa6d.js"
   ]
 }
