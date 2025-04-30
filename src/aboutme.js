@@ -6,8 +6,8 @@ import profile from './Components/PersonalImages/profile_small.jpg'; // with imp
 import { TechnicalSkills } from './Components/ComponentData/TechnicalSkills';
 import { UniversityProjectsEnglish, UniversityProjectsFrancais } from './Components/ComponentData/UniversityProjects';
 import { PersonalProjectsEnglish, PersonalProjectsFrancais } from './Components/ComponentData/PersonalProjects';
-import resume_en from './Components/Resume/Natchev_Keanu_CV_english.pdf';
-import resume_fr from './Components/Resume/Natchev_Keanu_CV_francais.pdf';
+import resume_en from './Components/Resume/Natchev_Keanu_CV_en.pdf';
+// import resume_fr from './Components/Resume/Natchev_Keanu_CV_francais.pdf';
 import Navbar from './Components/Navbar';
 import ScrollToTop from './Components/ScrollToTop';
 import Footer from './Components/Footer';
@@ -118,14 +118,14 @@ class aboutme extends Component {
                                     {/* View Resume */}
                                     {(localStorage.getItem('language') == 'English' || localStorage.getItem('language') != 'Français') ? ('View Resume') : ('Télécharger CV')}
                                     <div className='dropdown-resume'>
-                                        <a className='resume-link-option' href={resume_en} target='_blank' rel='noopener noreferrer'>English</a>
-                                        <a className='resume-link-option' href={resume_fr} target='_blank' rel='noopener noreferrer'>Français</a>
+                                        <a className='resume-link-option' href={resume_en} target='_blank' rel='noopener noreferrer'>Resume</a>
+                                        {/* <a className='resume-link-option' href={resume_fr} target='_blank' rel='noopener noreferrer'>Français</a> */}
                                     </div>
                                 </a>
-                                <Link className="contact-me-link" to="/contact">
-                                    {(localStorage.getItem('language') == 'English' || localStorage.getItem('language') != 'Français') ? ('Contact Me') : ('Contactez-Moi')}
+                                {/* <Link className="contact-me-link" to="/contact"> */}
+                                    {/* {(localStorage.getItem('language') == 'English' || localStorage.getItem('language') != 'Français') ? ('Contact Me') : ('Contactez-Moi')} */}
                                     {/* Contact Me */}
-                                </Link>
+                                {/* </Link> */}
                             </div>
                         </div>
                     </div>

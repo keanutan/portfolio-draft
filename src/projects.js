@@ -365,7 +365,7 @@ class projects extends Component {
         return (
 
             <div className={(this.state.mountedProjects) ? "wrapper-projects" : "wrapper-black-projects"} onLoad={this.wrapperTransitionProjects}>
-                <h3 className="projects-title">{(localStorage.getItem('language') == 'English' || localStorage.getItem('language') != 'Français') ? ('Projects [UNDER CONSTRUCTION]') : ('Projects [EN PROGRÈS]')}</h3>
+                <h3 className="projects-title">{(localStorage.getItem('language') == 'English' || localStorage.getItem('language') != 'Français') ? ('Projects') : ('Projects')}</h3>
                 <Navbar pageName={this.state.componentName}></Navbar>
                 <div className="projects-window-wrapper">
                     <div className="projects-window-top-bar">
